@@ -1,0 +1,87 @@
+============================================================
+VOICE AGENT LATENCY BENCHMARK RESULTS
+Generated: 20260827T102644
+============================================================
+
+[Q1] Lambda + Provisioned Concurrency
+  Test T1 — Lambda PC (Qualifier=live, warm invocations):
+    p50=N/A  p95=N/A  p99=N/A  n=N/A
+    Target p50 < 100ms: N/A
+  Test T2 — Lambda $LATEST (cold baseline):
+    p50=N/A  p95=N/A  p99=N/A  n=N/A
+  Test T3 — Gateway MCP tool overhead vs T1:
+
+[Q2] AgentCore Runtime Cold Start Mitigation
+  Test T4 — Container cold start (new session, container agent):
+    p50=N/A  p95=N/A  p99=N/A  n=N/A
+  Test T5 — Code-deploy cold start (new session, code agent):
+    p50=N/A  p95=N/A  p99=N/A  n=N/A
+  Test T6 — Pre-warm (warmup + 2s sleep → ping; target p50 < 500ms):
+    p50=N/A  p95=N/A  p99=N/A
+    Target p50 < 500ms: N/A
+  Test T7 — Round-robin pings across 3 endpoints (new sessions):
+  Test T8 — Same-session 20 pings after warmup (target p50 < 200ms):
+    p50=N/A  p95=N/A  p99=N/A
+    Target p50 < 200ms: N/A
+
+[E2E] Full Voice Turn
+  Test T9 — Cancel BK-001 (target p50 < 2000ms):
+    With prewarm:    p50=4804.9ms  p95=6417.0ms  p99=6417.0ms
+    Without prewarm: p50=5510.6ms  p95=9105.9ms  p99=9105.9ms
+    Target p50 < 2000ms (prewarm): NO
+
+[BURST] Warm Pool Exhaustion (15 concurrent)
+  Test T10 — 15 concurrent new-session pings:
+    Warm (latency <= 1500ms): N/A — N/A
+    Cold (latency >  1500ms): N/A — N/A
+    Served from warm pool: N/A/15
+
+[STREAMING] Time to First Token (T12)
+  Test T11 — Streaming TTFB (SSE text/event-stream, NOTE: replaces impossible client-WebSocket):
+    With prewarm:    TTFB p50=N/A  p95=N/A
+    Without prewarm: TTFB p50=N/A  p95=N/A
+  Test T12 — Streaming TTFT (target TTFT p50 < 1500ms):
+    TTFT:  p50=4414.3ms  p95=5418.5ms  p99=5418.5ms
+    Total: p50=4876.9ms  Delta(total-ttft): p50=462.6ms
+    Target TTFT p50 < 1500ms: NO
+
+[MULTI-TURN] Second Turn on Warm Session (T13)
+  Test T13 — Turn2 latency on same session (target p50 < 1500ms):
+    p50=4407.5ms  p95=5677.5ms  p99=5677.5ms
+    Target p50 < 1500ms: NO
+
+[PRE-WARM CURVE] Minimum effective wait (T14)
+  Test T14 — Post-warmup ping latency by wait duration:
+
+[PARALLEL-VS-SEQUENTIAL] Tool Parallelism (T15)
+    parallel_tools=true: 10/10 runs
+    Total E2E: p50=4876.2ms  p95=5660.7ms
+
+[CONNECT-HOP] T16 — Connect-sim Lambda hop vs direct:
+    Direct:      p50=N/A  p95=N/A
+    Connect hop: p50=N/A  p95=N/A
+    Overhead:    p50=N/A
+
+[COST] Estimated monthly cost at 1000 calls/day
+  Assumptions: 1000 calls/day × 30 days = 30,000 calls/month
+               Lambda: 20 PC instances, 512MB ARM, ~200ms avg duration
+               LLM: ~500 input / ~200 output tokens avg per call
+
+  Lambda PC (idle provisioned):   $     91.08/mo
+  Lambda PC (requests+duration):  $      0.05/mo
+  Lambda total:                   $     91.12/mo
+
+  LLM tokens (Haiku 4.5):         $     36.00/mo
+    Input  rate: $0.00080/1K tokens
+    Output rate: $0.00400/1K tokens
+
+  AgentCore Runtime:              $      0.00/mo  (update rates after GA pricing published)
+  Gateway invocations:            $      0.01/mo
+
+  TOTAL (estimated):              $    127.13/mo
+  NOTE: AgentCore Runtime pricing not yet GA-published; fill cost_rates in config.
+
+VERDICT:
+  E2E p50 < 2000ms:      FAIL (4804.9ms)
+  TTFT p50 < 1500ms:     FAIL (4414.3ms)
+============================================================

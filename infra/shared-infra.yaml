@@ -1,0 +1,233 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  voice-agent-latency-bench shared infrastructure:
+  DynamoDB tables, Lambda execution role, AgentCore Gateway role,
+  and AgentCore Runtime role.
+
+Resources:
+
+  # ---------------------------------------------------------------------------
+  # DynamoDB Tables
+  # ---------------------------------------------------------------------------
+
+  ReservationsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: voice-bench-reservations
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: booking_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: booking_id
+          KeyType: HASH
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+
+  RefundRulesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: voice-bench-refund-rules
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: fare_type
+          AttributeType: S
+        - AttributeName: payment_method
+          AttributeType: S
+      KeySchema:
+        - AttributeName: fare_type
+          KeyType: HASH
+        - AttributeName: payment_method
+          KeyType: RANGE
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+
+  # ---------------------------------------------------------------------------
+  # IAM Role: Lambda execution
+  # ---------------------------------------------------------------------------
+
+  LambdaExecRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: voice-bench-lambda-exec-role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: DynamoDBReadPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:GetItem
+                  - dynamodb:Query
+                  - dynamodb:BatchGetItem
+                Resource:
+                  - !GetAtt ReservationsTable.Arn
+                  - !GetAtt RefundRulesTable.Arn
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+
+  # ---------------------------------------------------------------------------
+  # IAM Role: AgentCore Gateway
+  # ---------------------------------------------------------------------------
+
+  GatewayRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: voice-bench-gateway-role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: bedrock-agentcore.amazonaws.com
+            Action: sts:AssumeRole
+            Condition:
+              StringEquals:
+                aws:SourceAccount: "111122223333"
+      Policies:
+        - PolicyName: InvokeLambdaPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - lambda:InvokeFunction
+                Resource: arn:aws:lambda:us-east-1:111122223333:function:voice-bench-*
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+
+  # ---------------------------------------------------------------------------
+  # IAM Role: AgentCore Runtime
+  # ---------------------------------------------------------------------------
+
+  RuntimeRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: voice-bench-runtime-role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: bedrock-agentcore.amazonaws.com
+            Action: sts:AssumeRole
+            Condition:
+              StringEquals:
+                aws:SourceAccount: "111122223333"
+              StringLike:
+                aws:SourceArn: arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/*
+      Policies:
+        - PolicyName: BedrockInvokePolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - bedrock:InvokeModel
+                  - bedrock:InvokeModelWithResponseStream
+                Resource:
+                  # Base foundation model (us-east-1 and wildcard region for inference profiles)
+                  - arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0
+                  - arn:aws:bedrock:*::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0
+                  # Cross-region inference profile
+                  - arn:aws:bedrock:us-east-1:111122223333:inference-profile/us.anthropic.claude-haiku-4-5-20251001-v1:0
+        - PolicyName: AgentCorePolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                # POC scope: broad bedrock-agentcore:* on *.
+                # TODO: tighten to specific gateway ARN in prod,
+                #   e.g. arn:aws:bedrock-agentcore:us-east-1:111122223333:gateway/voice-bench-tools
+                Action:
+                  - bedrock-agentcore:*
+                Resource: "*"
+        - PolicyName: CloudWatchLogsPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: "*"
+        - PolicyName: EcrPullPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              # AgentCore validates the container image via the execution role and
+              # pulls it at runtime start (container deployment).
+              - Effect: Allow
+                Action: ecr:GetAuthorizationToken
+                Resource: "*"
+              - Effect: Allow
+                Action:
+                  - ecr:BatchGetImage
+                  - ecr:GetDownloadUrlForLayer
+                  - ecr:BatchCheckLayerAvailability
+                Resource: arn:aws:ecr:us-east-1:111122223333:repository/voice-bench-agent
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+
+# ---------------------------------------------------------------------------
+# Outputs (exported for consumption by the lambda-tools stack)
+# ---------------------------------------------------------------------------
+
+Outputs:
+
+  ReservationsTableName:
+    Description: DynamoDB table name for reservations
+    Value: !Ref ReservationsTable
+    Export:
+      Name: voice-bench-ReservationsTableName
+
+  ReservationsTableArn:
+    Description: DynamoDB table ARN for reservations
+    Value: !GetAtt ReservationsTable.Arn
+    Export:
+      Name: voice-bench-ReservationsTableArn
+
+  RefundRulesTableName:
+    Description: DynamoDB table name for refund rules
+    Value: !Ref RefundRulesTable
+    Export:
+      Name: voice-bench-RefundRulesTableName
+
+  RefundRulesTableArn:
+    Description: DynamoDB table ARN for refund rules
+    Value: !GetAtt RefundRulesTable.Arn
+    Export:
+      Name: voice-bench-RefundRulesTableArn
+
+  LambdaExecRoleArn:
+    Description: IAM role ARN for Lambda execution
+    Value: !GetAtt LambdaExecRole.Arn
+    Export:
+      Name: voice-bench-LambdaExecRoleArn
+
+  GatewayRoleArn:
+    Description: IAM role ARN for AgentCore Gateway
+    Value: !GetAtt GatewayRole.Arn
+    Export:
+      Name: voice-bench-GatewayRoleArn
+
+  RuntimeRoleArn:
+    Description: IAM role ARN for AgentCore Runtime
+    Value: !GetAtt RuntimeRole.Arn
+    Export:
+      Name: voice-bench-RuntimeRoleArn

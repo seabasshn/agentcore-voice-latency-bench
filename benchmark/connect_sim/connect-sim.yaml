@@ -1,0 +1,66 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  T16 Connect-integration simulator: a Lambda that invokes the AgentCore Runtime,
+  representing the Amazon Connect -> Lambda -> InvokeAgentRuntime hop.
+
+Resources:
+
+  ConnectSimRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: voice-bench-connect-sim-role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: InvokeAgentRuntime
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: bedrock-agentcore:InvokeAgentRuntime
+                Resource: arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/*
+      Tags:
+        - { Key: project, Value: voice-agent-latency-bench }
+
+  ConnectSimFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: voice-bench-connect-sim
+      Runtime: python3.12
+      Architectures: [arm64]
+      MemorySize: 512
+      Timeout: 60
+      Handler: index.handler
+      Role: !GetAtt ConnectSimRole.Arn
+      Tags:
+        - { Key: project, Value: voice-agent-latency-bench }
+      Code:
+        ZipFile: |
+          import json, boto3
+          # Module-level client: reused across warm invocations (realistic Connect integration).
+          _client = boto3.client("bedrock-agentcore")
+
+          def handler(event, context):
+              arn = event["agent_runtime_arn"]
+              sid = event["session_id"]
+              qualifier = event.get("qualifier", "DEFAULT")
+              payload = event.get("payload", {"type": "ping"})
+              r = _client.invoke_agent_runtime(
+                  agentRuntimeArn=arn,
+                  runtimeSessionId=sid,
+                  qualifier=qualifier,
+                  contentType="application/json",
+                  accept="application/json",
+                  payload=json.dumps(payload).encode("utf-8"),
+              )
+              return {"body": r["response"].read().decode("utf-8")}
+
+Outputs:
+  ConnectSimFunctionName:
+    Value: !Ref ConnectSimFunction

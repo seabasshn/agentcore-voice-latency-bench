@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+.pytest_cache/
+*.log
+build/
+*.zip
+.DS_Store
+node_modules/
+# Keep results/ tracked (raw benchmark data + findings)

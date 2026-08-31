@@ -1,0 +1,4980 @@
+{
+  "timestamp": "20260826T154649",
+  "config_profile": "voice-bench",
+  "results": {
+    "T1": {
+      "test": "T1",
+      "description": "Lambda PC warm (Qualifier=live)",
+      "samples": [
+        388.56845803093165,
+        127.99037504009902,
+        112.39166697487235,
+        111.778249964118,
+        107.4086669832468,
+        115.64545799046755,
+        112.61795798782259,
+        113.02966700168326,
+        102.52145800041035,
+        108.8439580053091,
+        109.680459019728,
+        123.01250000018626,
+        113.92133397748694,
+        111.90720903687179,
+        127.88537499727681,
+        107.73374995915219,
+        104.36674999073148,
+        115.88095797924325,
+        114.35045796679333,
+        143.6099170241505
+      ],
+      "raw": [
+        {
+          "iter": 0,
+          "latency_ms": 388.56845803093165,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 5.201
+          }
+        },
+        {
+          "iter": 1,
+          "latency_ms": 127.99037504009902,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.346
+          }
+        },
+        {
+          "iter": 2,
+          "latency_ms": 112.39166697487235,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.264
+          }
+        },
+        {
+          "iter": 3,
+          "latency_ms": 111.778249964118,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.167
+          }
+        },
+        {
+          "iter": 4,
+          "latency_ms": 107.4086669832468,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.984
+          }
+        },
+        {
+          "iter": 5,
+          "latency_ms": 115.64545799046755,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.13
+          }
+        },
+        {
+          "iter": 6,
+          "latency_ms": 112.61795798782259,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.931
+          }
+        },
+        {
+          "iter": 7,
+          "latency_ms": 113.02966700168326,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.896
+          }
+        },
+        {
+          "iter": 8,
+          "latency_ms": 102.52145800041035,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.127
+          }
+        },
+        {
+          "iter": 9,
+          "latency_ms": 108.8439580053091,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.116
+          }
+        },
+        {
+          "iter": 10,
+          "latency_ms": 109.680459019728,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.212
+          }
+        },
+        {
+          "iter": 11,
+          "latency_ms": 123.01250000018626,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.114
+          }
+        },
+        {
+          "iter": 12,
+          "latency_ms": 113.92133397748694,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.082
+          }
+        },
+        {
+          "iter": 13,
+          "latency_ms": 111.90720903687179,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.943
+          }
+        },
+        {
+          "iter": 14,
+          "latency_ms": 127.88537499727681,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.054
+          }
+        },
+        {
+          "iter": 15,
+          "latency_ms": 107.73374995915219,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.374
+          }
+        },
+        {
+          "iter": 16,
+          "latency_ms": 104.36674999073148,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.274
+          }
+        },
+        {
+          "iter": 17,
+          "latency_ms": 115.88095797924325,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.66
+          }
+        },
+        {
+          "iter": 18,
+          "latency_ms": 114.35045796679333,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.263
+          }
+        },
+        {
+          "iter": 19,
+          "latency_ms": 143.6099170241505,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.109
+          }
+        }
+      ],
+      "stats": {
+        "count": 20,
+        "min": 102.52145800041035,
+        "max": 388.56845803093165,
+        "mean": 128.66,
+        "p50": 112.62,
+        "p95": 388.57,
+        "p99": 388.57
+      }
+    },
+    "T2": {
+      "test": "T2",
+      "description": "Lambda $LATEST (cold baseline)",
+      "samples": [
+        170.4151249723509,
+        108.2174580078572,
+        155.60662501957268,
+        113.84108301717788,
+        115.13462499715388,
+        108.21054200641811,
+        120.77195796882734,
+        119.02733403258026,
+        107.35274996841326,
+        107.48520802007988,
+        107.98891598824412,
+        104.94733398081735,
+        106.93179100053385,
+        128.9530000067316,
+        112.32616699999198,
+        110.8667500084266,
+        112.38845804473385,
+        104.56391703337431,
+        107.21008299151435,
+        101.92179202567786
+      ],
+      "raw": [
+        {
+          "iter": 0,
+          "latency_ms": 170.4151249723509,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.08
+          }
+        },
+        {
+          "iter": 1,
+          "latency_ms": 108.2174580078572,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.126
+          }
+        },
+        {
+          "iter": 2,
+          "latency_ms": 155.60662501957268,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.322
+          }
+        },
+        {
+          "iter": 3,
+          "latency_ms": 113.84108301717788,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.662
+          }
+        },
+        {
+          "iter": 4,
+          "latency_ms": 115.13462499715388,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.047
+          }
+        },
+        {
+          "iter": 5,
+          "latency_ms": 108.21054200641811,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.925
+          }
+        },
+        {
+          "iter": 6,
+          "latency_ms": 120.77195796882734,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.012
+          }
+        },
+        {
+          "iter": 7,
+          "latency_ms": 119.02733403258026,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.318
+          }
+        },
+        {
+          "iter": 8,
+          "latency_ms": 107.35274996841326,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.983
+          }
+        },
+        {
+          "iter": 9,
+          "latency_ms": 107.48520802007988,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.9
+          }
+        },
+        {
+          "iter": 10,
+          "latency_ms": 107.98891598824412,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.139
+          }
+        },
+        {
+          "iter": 11,
+          "latency_ms": 104.94733398081735,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.046
+          }
+        },
+        {
+          "iter": 12,
+          "latency_ms": 106.93179100053385,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.051
+          }
+        },
+        {
+          "iter": 13,
+          "latency_ms": 128.9530000067316,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.143
+          }
+        },
+        {
+          "iter": 14,
+          "latency_ms": 112.32616699999198,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.128
+          }
+        },
+        {
+          "iter": 15,
+          "latency_ms": 110.8667500084266,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.131
+          }
+        },
+        {
+          "iter": 16,
+          "latency_ms": 112.38845804473385,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 4.0
+          }
+        },
+        {
+          "iter": 17,
+          "latency_ms": 104.56391703337431,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.946
+          }
+        },
+        {
+          "iter": 18,
+          "latency_ms": 107.21008299151435,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.977
+          }
+        },
+        {
+          "iter": 19,
+          "latency_ms": 101.92179202567786,
+          "result": {
+            "is_group_booking": false,
+            "booking_id": "BK-001",
+            "payment_method": "CREDIT_CARD",
+            "has_checked_bags": false,
+            "flight_date": "2026-09-15",
+            "passenger_name": "Alice Martin",
+            "already_traveled": false,
+            "fare_type": "STANDARD",
+            "pax_count": 1,
+            "linked_minor": false,
+            "_execution_ms": 3.755
+          }
+        }
+      ],
+      "stats": {
+        "count": 20,
+        "min": 101.92179202567786,
+        "max": 170.4151249723509,
+        "mean": 116.21,
+        "p50": 108.22,
+        "p95": 170.42,
+        "p99": 170.42
+      }
+    },
+    "T3": {
+      "test": "T3",
+      "description": "Gateway MCP tool calls",
+      "tools": {
+        "get_reservation": {
+          "samples": [
+            464.56529200077057,
+            411.1427089665085,
+            402.49941701767966,
+            411.1381250550039,
+            412.810834008269,
+            411.2521249917336,
+            406.52191697154194,
+            449.0058340015821,
+            432.2847920120694,
+            391.38604095205665,
+            494.66870800824836,
+            446.5414169826545,
+            394.0758329699747,
+            401.3415419613011,
+            400.2121670055203,
+            455.79637499758974,
+            411.1144159687683,
+            397.0458330004476,
+            548.5512090381235,
+            433.10462502995506
+          ],
+          "stats": {
+            "count": 20,
+            "min": 391.38604095205665,
+            "max": 548.5512090381235,
+            "mean": 428.75,
+            "p50": 411.14,
+            "p95": 548.55,
+            "p99": 548.55
+          },
+          "overhead_vs_t1_p50_ms": 298.52,
+          "raw": [
+            {
+              "iter": 0,
+              "latency_ms": 464.56529200077057
+            },
+            {
+              "iter": 1,
+              "latency_ms": 411.1427089665085
+            },
+            {
+              "iter": 2,
+              "latency_ms": 402.49941701767966
+            },
+            {
+              "iter": 3,
+              "latency_ms": 411.1381250550039
+            },
+            {
+              "iter": 4,
+              "latency_ms": 412.810834008269
+            },
+            {
+              "iter": 5,
+              "latency_ms": 411.2521249917336
+            },
+            {
+              "iter": 6,
+              "latency_ms": 406.52191697154194
+            },
+            {
+              "iter": 7,
+              "latency_ms": 449.0058340015821
+            },
+            {
+              "iter": 8,
+              "latency_ms": 432.2847920120694
+            },
+            {
+              "iter": 9,
+              "latency_ms": 391.38604095205665
+            },
+            {
+              "iter": 10,
+              "latency_ms": 494.66870800824836
+            },
+            {
+              "iter": 11,
+              "latency_ms": 446.5414169826545
+            },
+            {
+              "iter": 12,
+              "latency_ms": 394.0758329699747
+            },
+            {
+              "iter": 13,
+              "latency_ms": 401.3415419613011
+            },
+            {
+              "iter": 14,
+              "latency_ms": 400.2121670055203
+            },
+            {
+              "iter": 15,
+              "latency_ms": 455.79637499758974
+            },
+            {
+              "iter": 16,
+              "latency_ms": 411.1144159687683
+            },
+            {
+              "iter": 17,
+              "latency_ms": 397.0458330004476
+            },
+            {
+              "iter": 18,
+              "latency_ms": 548.5512090381235
+            },
+            {
+              "iter": 19,
+              "latency_ms": 433.10462502995506
+            }
+          ]
+        },
+        "check_eligibility": {
+          "samples": [
+            415.9820409840904,
+            418.3852910064161,
+            418.35404199082404,
+            416.75274999579415,
+            417.8168330108747,
+            403.7032499909401,
+            401.28120803274214,
+            426.4863330172375,
+            479.0067500434816,
+            404.05583300162107,
+            403.72091700555757,
+            408.1921670003794,
+            397.9134170222096,
+            424.218583968468,
+            438.06162499822676,
+            415.657082980033,
+            413.8412920292467,
+            432.9662499949336,
+            412.3254169826396,
+            410.89108400046825
+          ],
+          "stats": {
+            "count": 20,
+            "min": 397.9134170222096,
+            "max": 479.0067500434816,
+            "mean": 417.98,
+            "p50": 415.66,
+            "p95": 479.01,
+            "p99": 479.01
+          },
+          "overhead_vs_t1_p50_ms": 303.04,
+          "raw": [
+            {
+              "iter": 0,
+              "latency_ms": 415.9820409840904
+            },
+            {
+              "iter": 1,
+              "latency_ms": 418.3852910064161
+            },
+            {
+              "iter": 2,
+              "latency_ms": 418.35404199082404
+            },
+            {
+              "iter": 3,
+              "latency_ms": 416.75274999579415
+            },
+            {
+              "iter": 4,
+              "latency_ms": 417.8168330108747
+            },
+            {
+              "iter": 5,
+              "latency_ms": 403.7032499909401
+            },
+            {
+              "iter": 6,
+              "latency_ms": 401.28120803274214
+            },
+            {
+              "iter": 7,
+              "latency_ms": 426.4863330172375
+            },
+            {
+              "iter": 8,
+              "latency_ms": 479.0067500434816
+            },
+            {
+              "iter": 9,
+              "latency_ms": 404.05583300162107
+            },
+            {
+              "iter": 10,
+              "latency_ms": 403.72091700555757
+            },
+            {
+              "iter": 11,
+              "latency_ms": 408.1921670003794
+            },
+            {
+              "iter": 12,
+              "latency_ms": 397.9134170222096
+            },
+            {
+              "iter": 13,
+              "latency_ms": 424.218583968468
+            },
+            {
+              "iter": 14,
+              "latency_ms": 438.06162499822676
+            },
+            {
+              "iter": 15,
+              "latency_ms": 415.657082980033
+            },
+            {
+              "iter": 16,
+              "latency_ms": 413.8412920292467
+            },
+            {
+              "iter": 17,
+              "latency_ms": 432.9662499949336
+            },
+            {
+              "iter": 18,
+              "latency_ms": 412.3254169826396
+            },
+            {
+              "iter": 19,
+              "latency_ms": 410.89108400046825
+            }
+          ]
+        },
+        "get_refund_method": {
+          "samples": [
+            592.226542008575,
+            443.02091700956225,
+            522.0058750128374,
+            464.8644590051845,
+            423.80474996753037,
+            421.6693749767728,
+            400.3514159703627,
+            368.3537089964375,
+            412.5878750346601,
+            407.5952079729177,
+            368.26620902866125,
+            348.73833402525634,
+            401.16424998268485,
+            425.388791016303,
+            399.67079198686406,
+            449.87420801771805,
+            355.57837499072775,
+            417.8207920049317,
+            422.251750016585,
+            433.96562500856817
+          ],
+          "stats": {
+            "count": 20,
+            "min": 348.73833402525634,
+            "max": 592.226542008575,
+            "mean": 423.96,
+            "p50": 417.82,
+            "p95": 592.23,
+            "p99": 592.23
+          },
+          "overhead_vs_t1_p50_ms": 305.2,
+          "raw": [
+            {
+              "iter": 0,
+              "latency_ms": 592.226542008575
+            },
+            {
+              "iter": 1,
+              "latency_ms": 443.02091700956225
+            },
+            {
+              "iter": 2,
+              "latency_ms": 522.0058750128374
+            },
+            {
+              "iter": 3,
+              "latency_ms": 464.8644590051845
+            },
+            {
+              "iter": 4,
+              "latency_ms": 423.80474996753037
+            },
+            {
+              "iter": 5,
+              "latency_ms": 421.6693749767728
+            },
+            {
+              "iter": 6,
+              "latency_ms": 400.3514159703627
+            },
+            {
+              "iter": 7,
+              "latency_ms": 368.3537089964375
+            },
+            {
+              "iter": 8,
+              "latency_ms": 412.5878750346601
+            },
+            {
+              "iter": 9,
+              "latency_ms": 407.5952079729177
+            },
+            {
+              "iter": 10,
+              "latency_ms": 368.26620902866125
+            },
+            {
+              "iter": 11,
+              "latency_ms": 348.73833402525634
+            },
+            {
+              "iter": 12,
+              "latency_ms": 401.16424998268485
+            },
+            {
+              "iter": 13,
+              "latency_ms": 425.388791016303
+            },
+            {
+              "iter": 14,
+              "latency_ms": 399.67079198686406
+            },
+            {
+              "iter": 15,
+              "latency_ms": 449.87420801771805
+            },
+            {
+              "iter": 16,
+              "latency_ms": 355.57837499072775
+            },
+            {
+              "iter": 17,
+              "latency_ms": 417.8207920049317
+            },
+            {
+              "iter": 18,
+              "latency_ms": 422.251750016585
+            },
+            {
+              "iter": 19,
+              "latency_ms": 433.96562500856817
+            }
+          ]
+        }
+      }
+    },
+    "T4": {
+      "test": "T4",
+      "description": "Runtime cold start \u2014 container (new session each iter)",
+      "samples": [
+        1221.13616601564,
+        1176.339709025342,
+        1490.7817089697346,
+        4842.453209043015,
+        4792.20033402089,
+        819.0520409843884,
+        1019.4193330244161,
+        960.9025419922546,
+        977.3568749660626,
+        909.2138329870068,
+        1415.9334580181167,
+        784.8713339772075,
+        914.7477500373498,
+        4872.8788329754025,
+        6204.193084035069,
+        823.3892500284128,
+        788.4295419789851,
+        6150.779874995351,
+        2206.748874974437,
+        838.915416970849
+      ],
+      "raw": [
+        {
+          "iter": 0,
+          "session_id": "a5ee4b6328b3462e8b8d088977541b920acfa05dce584f008b82548c0ccf40a9",
+          "latency_ms": 1221.13616601564
+        },
+        {
+          "iter": 1,
+          "session_id": "cf0b0f4a0ab34bd5a1c6727b4aab99c635fc13fd0fe547b9b62b83d84e9d70b3",
+          "latency_ms": 1176.339709025342
+        },
+        {
+          "iter": 2,
+          "session_id": "1640334b180c48938999f61c21dd1578836a83d009b44d4daf9e98b256add9df",
+          "latency_ms": 1490.7817089697346
+        },
+        {
+          "iter": 3,
+          "session_id": "e2603e80e92445d98ec9a6e68cba3cb17fded3d6e85f4c5d95f6eb0d12c2b5a8",
+          "latency_ms": 4842.453209043015
+        },
+        {
+          "iter": 4,
+          "session_id": "cd4fdd0541404c009f6f0918ff113024e1124f961d6e46b581470646d5dfdc19",
+          "latency_ms": 4792.20033402089
+        },
+        {
+          "iter": 5,
+          "session_id": "cb797154289b4999a5edc9a4398a4379eddb5d35e0ea4c17ad246f594a6d21f8",
+          "latency_ms": 819.0520409843884
+        },
+        {
+          "iter": 6,
+          "session_id": "9a1a8c3556224932ad4945e14bf04f0cef99f10d7a994a82b79159f393202e9d",
+          "latency_ms": 1019.4193330244161
+        },
+        {
+          "iter": 7,
+          "session_id": "ad87c9dd96b64f4096503257f05511440a2f8084009c409e885b956df753404d",
+          "latency_ms": 960.9025419922546
+        },
+        {
+          "iter": 8,
+          "session_id": "daac6b631d6040d2bc0fc777f0ae98fb1241d66b0540478992305c0db3709e68",
+          "latency_ms": 977.3568749660626
+        },
+        {
+          "iter": 9,
+          "session_id": "29345e1ff42243229dcc987d4264c687b641773eed4c4263853ddce4067ed713",
+          "latency_ms": 909.2138329870068
+        },
+        {
+          "iter": 10,
+          "session_id": "9edad1fd935c453bb37ee52c6d676a24dc66979efb144f42922fe3efcb49d7dd",
+          "latency_ms": 1415.9334580181167
+        },
+        {
+          "iter": 11,
+          "session_id": "68d323227e5b4d3ca2cc8e18a075b978249aad54db264a469055566a373bf910",
+          "latency_ms": 784.8713339772075
+        },
+        {
+          "iter": 12,
+          "session_id": "b43946627ac24b2180866a44944d3862f05cd56a2a124a878b7ff0391eda3778",
+          "latency_ms": 914.7477500373498
+        },
+        {
+          "iter": 13,
+          "session_id": "12c38f25f0d64be98c2f6b4336d060b5ba220b53a8bc4063a3febff9b0b896e9",
+          "latency_ms": 4872.8788329754025
+        },
+        {
+          "iter": 14,
+          "session_id": "5fba89127ddf4595b6868b3efc47c6bd1e59afdf4ee34236a2e6304c97c48da0",
+          "latency_ms": 6204.193084035069
+        },
+        {
+          "iter": 15,
+          "session_id": "fbe789a4e9d942e8aca082d0a94375b2b50e7f42f6954b61b42b099eb4c32dd0",
+          "latency_ms": 823.3892500284128
+        },
+        {
+          "iter": 16,
+          "session_id": "12f9220d2a2843f5a14624b96d06d48bcff828b6f39249129855b7eaa4c2e033",
+          "latency_ms": 788.4295419789851
+        },
+        {
+          "iter": 17,
+          "session_id": "e22aaa50a0fd4bfc80359b486c833e0f3da2418b1fb149a482840f7f47e9b7ef",
+          "latency_ms": 6150.779874995351
+        },
+        {
+          "iter": 18,
+          "session_id": "decbc6a6cb3144f79de3609469790277d9406af851d34cb99533ad7ea1178458",
+          "latency_ms": 2206.748874974437
+        },
+        {
+          "iter": 19,
+          "session_id": "ed7d5218200b495193fa31d3b25d29f9a713ea77c7734dedbf65a6e1e687f50b",
+          "latency_ms": 838.915416970849
+        }
+      ],
+      "stats": {
+        "count": 20,
+        "min": 784.8713339772075,
+        "max": 6204.193084035069,
+        "mean": 2160.49,
+        "p50": 1019.42,
+        "p95": 6204.19,
+        "p99": 6204.19
+      }
+    },
+    "T5": {
+      "test": "T5",
+      "description": "Runtime cold start \u2014 code-deploy agent (new session each iter)",
+      "samples": [
+        4278.895291034132,
+        5381.5074999583885,
+        4764.621125010308,
+        5323.415333987214,
+        4211.2794580170885,
+        5399.134624982253,
+        3802.3746669641696,
+        3693.2953750365414,
+        4365.597249998245,
+        4841.132916975766,
+        3752.526999975089,
+        4291.429166973103,
+        5328.1669589923695,
+        3766.1628749920055,
+        4803.4687920007855,
+        4756.409499968868,
+        5292.169917025603,
+        4864.600875007454,
+        4790.1730830199085,
+        4273.290125012863
+      ],
+      "raw": [
+        {
+          "iter": 0,
+          "session_id": "63d3602d4028415baa42045c1c87f525a0847fe03f374031a2bbf3ef7257140d",
+          "latency_ms": 4278.895291034132
+        },
+        {
+          "iter": 1,
+          "session_id": "e7ffbfce691640b896726001c5a8b98d5a3109c86665406897ef8569c54f1aee",
+          "latency_ms": 5381.5074999583885
+        },
+        {
+          "iter": 2,
+          "session_id": "b5fc749665c14a4e9aeed0d4ef86379ebf02591b82b74d86a7baaa0992c55e28",
+          "latency_ms": 4764.621125010308
+        },
+        {
+          "iter": 3,
+          "session_id": "fd22d4ebac6442cea501c77054977575ea00d55028034b9c8055655baf92ecfe",
+          "latency_ms": 5323.415333987214
+        },
+        {
+          "iter": 4,
+          "session_id": "62a52ce23340457eaed168190f561a21b09f2fd38f7c4a0d842531f13e88a006",
+          "latency_ms": 4211.2794580170885
+        },
+        {
+          "iter": 5,
+          "session_id": "84e436819510496dad78ea7f9ce9f7b277ec9b5a502a41b78e1daf78edea0d2d",
+          "latency_ms": 5399.134624982253
+        },
+        {
+          "iter": 6,
+          "session_id": "003ffa921f6747cf86b377bfb708e88c7c7eb00171e94284a6fe21641bcadfbe",
+          "latency_ms": 3802.3746669641696
+        },
+        {
+          "iter": 7,
+          "session_id": "ad71981ae02344a9be20668d8369cd0735484e4fdf9949d4bcb69c9117b4e332",
+          "latency_ms": 3693.2953750365414
+        },
+        {
+          "iter": 8,
+          "session_id": "c383f6c21f3e4cfcb2463cdbfa29d370379720ea376748f6b02caed9b2a0ce32",
+          "latency_ms": 4365.597249998245
+        },
+        {
+          "iter": 9,
+          "session_id": "b062058a7d294dc8843a07acedc39b5a653b647280fd43809b687960a09906ba",
+          "latency_ms": 4841.132916975766
+        },
+        {
+          "iter": 10,
+          "session_id": "7ed8ed4684f94a0692b9a5f53f544b171750bddce3e74dacb7ff58f2caebcda3",
+          "latency_ms": 3752.526999975089
+        },
+        {
+          "iter": 11,
+          "session_id": "7d5737d77b114d0e9fd09bbfeed180adb4f112fbbe34485b8e57b9eb7ccf8f5e",
+          "latency_ms": 4291.429166973103
+        },
+        {
+          "iter": 12,
+          "session_id": "375cc512905d41209ef5306b32c98486c20649c811b343ce823e7e6798e3b7fa",
+          "latency_ms": 5328.1669589923695
+        },
+        {
+          "iter": 13,
+          "session_id": "b33e255eb8474f03afebb28edf7cfbbb21d65f6df4a04c15ada62c9e2123e97f",
+          "latency_ms": 3766.1628749920055
+        },
+        {
+          "iter": 14,
+          "session_id": "202217c43823407e86565f6312dd5bbbceaf881d148f41da926449fc1ea3a394",
+          "latency_ms": 4803.4687920007855
+        },
+        {
+          "iter": 15,
+          "session_id": "98cb14ac289c4f38a694d3b7377fbc758ab44168008a4d9e8588fb0e0e09871d",
+          "latency_ms": 4756.409499968868
+        },
+        {
+          "iter": 16,
+          "session_id": "95b2f43a0b994cceb7940e32f24f8e50d42cac799d874d60b0d71752f858845e",
+          "latency_ms": 5292.169917025603
+        },
+        {
+          "iter": 17,
+          "session_id": "ea708d6f92fd463f89b11ef5291e2fd670475a33348441ca8da65e8526761a50",
+          "latency_ms": 4864.600875007454
+        },
+        {
+          "iter": 18,
+          "session_id": "571e312527174f809c03ca9152aa61c8fdf51b3661c443bf88f154e566f5decf",
+          "latency_ms": 4790.1730830199085
+        },
+        {
+          "iter": 19,
+          "session_id": "d130906ddf624c57a0e915eb6e265a1dbbd00c227a9840bc8ee6cf3532055205",
+          "latency_ms": 4273.290125012863
+        }
+      ],
+      "stats": {
+        "count": 20,
+        "min": 3693.2953750365414,
+        "max": 5399.134624982253,
+        "mean": 4598.98,
+        "p50": 4756.41,
+        "p95": 5399.13,
+        "p99": 5399.13
+      }
+    },
+    "T6": {
+      "test": "T6",
+      "description": "Pre-warm: warmup + 2s sleep \u2192 ping (target p50 < 500ms)",
+      "target_p50_ms": 500,
+      "samples": [
+        494.867334025912,
+        230.7974579744041,
+        329.59149999078363,
+        276.3758330256678,
+        202.75695802411065,
+        217.40462497109547,
+        239.0878750011325,
+        205.23345802212134,
+        247.1676670247689,
+        216.8111249920912,
+        227.34924999531358,
+        356.0457920539193,
+        219.81183299794793,
+        179.23237499780953,
+        237.98933305079117,
+        1597.6127499598078,
+        209.71987501252443,
+        217.51683298498392,
+        207.50316604971886,
+        224.58470799028873
+      ],
+      "raw": [
+        {
+          "iter": 0,
+          "session_id": "ebfba00fd7cb4f00872aa45b6df1118fd4caed3bc87240df952008730cbb05b2",
+          "latency_ms": 494.867334025912
+        },
+        {
+          "iter": 1,
+          "session_id": "f688cccee3d7477d8852b28705ed0456f3df8d0884114aab938da018c2a9cf76",
+          "latency_ms": 230.7974579744041
+        },
+        {
+          "iter": 2,
+          "session_id": "d92495f97d37450cbd8d833c03f223cec3e37c496a74405d9569dead7db07a10",
+          "latency_ms": 329.59149999078363
+        },
+        {
+          "iter": 3,
+          "session_id": "70a552239c874bf6a89d10971932d8a716dc30d34cb6497389c0676552f819a3",
+          "latency_ms": 276.3758330256678
+        },
+        {
+          "iter": 4,
+          "session_id": "01ed0b12b1f04fa58e3f88fa7bc458dccb93bd120b5446d1be823e705f75641e",
+          "latency_ms": 202.75695802411065
+        },
+        {
+          "iter": 5,
+          "session_id": "8e929cfc49b14d208d60598266f55bcfba94a70999b6425c8021061a544de433",
+          "latency_ms": 217.40462497109547
+        },
+        {
+          "iter": 6,
+          "session_id": "d535017175aa4f72af6451551ac2290bfd89fc7a1dcb42bbb9b6bb351bba72cb",
+          "latency_ms": 239.0878750011325
+        },
+        {
+          "iter": 7,
+          "session_id": "244518b086fd46bf80c5e695c72b1d6d449c124f880542489e07c66dd88bb25c",
+          "latency_ms": 205.23345802212134
+        },
+        {
+          "iter": 8,
+          "session_id": "bf33ff72d2e345e1b7cce87861155a660cf153a9a7ac4a14a53cd02e46d67291",
+          "latency_ms": 247.1676670247689
+        },
+        {
+          "iter": 9,
+          "session_id": "097d89e2c71446c095e0e4ae9175e5affdbee854b6c343238f5c3b1513c3cfa0",
+          "latency_ms": 216.8111249920912
+        },
+        {
+          "iter": 10,
+          "session_id": "5e2b91e387834c6c9d2f1a737efe198fe524b1521e00408ea3c19ba1b9ad22da",
+          "latency_ms": 227.34924999531358
+        },
+        {
+          "iter": 11,
+          "session_id": "fe8cc21d1b374b01a15f78cb64e97409b4a66426f8c34936903be989b10a2abd",
+          "latency_ms": 356.0457920539193
+        },
+        {
+          "iter": 12,
+          "session_id": "a6cbc479c1b14e878e5e2bcbc12d03d4fc8ab31e6cce4e3a87e4e6881ed30e48",
+          "latency_ms": 219.81183299794793
+        },
+        {
+          "iter": 13,
+          "session_id": "382bc0d3a4e84ba49dc260a3e5f631e3d30d5d77744b43ce9952220f3e259dda",
+          "latency_ms": 179.23237499780953
+        },
+        {
+          "iter": 14,
+          "session_id": "7430d17debf041ba8713ba4b2c3213813e865fa70eb141fcb664c5b3efbde752",
+          "latency_ms": 237.98933305079117
+        },
+        {
+          "iter": 15,
+          "session_id": "9476b22b9fa44ecc8e833c5b0fc6e55211087410e44f4ba0a0aa66f4d33893c6",
+          "latency_ms": 1597.6127499598078
+        },
+        {
+          "iter": 16,
+          "session_id": "d7c786415eb349b0ac9543bfc3d2295648e19fd3a2d2496a8928e2e5251fac3d",
+          "latency_ms": 209.71987501252443
+        },
+        {
+          "iter": 17,
+          "session_id": "90288030e4d14ba8a0171e807f612998c95b29461b404d069e476a18ea037af3",
+          "latency_ms": 217.51683298498392
+        },
+        {
+          "iter": 18,
+          "session_id": "8315a64806124f45b2e9b5a40296e90b43cc1a77590e414a9c148c45f4a7538f",
+          "latency_ms": 207.50316604971886
+        },
+        {
+          "iter": 19,
+          "session_id": "dc0527a528e9471fb96a531d3f881e58e78ea4b4a7ba446cbf0c11b1e4ae5674",
+          "latency_ms": 224.58470799028873
+        }
+      ],
+      "stats": {
+        "count": 20,
+        "min": 179.23237499780953,
+        "max": 1597.6127499598078,
+        "mean": 316.87,
+        "p50": 224.58,
+        "p95": 1597.61,
+        "p99": 1597.61
+      }
+    },
+    "T7": {
+      "test": "T7",
+      "description": "Round-robin pings across 3 endpoints (new sessions)",
+      "per_endpoint": {
+        "DEFAULT": {
+          "samples": [
+            853.5450409981422,
+            2738.9873329666443,
+            824.9038330395706,
+            4735.544875031337,
+            827.5297919753939,
+            4890.294915996492,
+            954.4932919670828
+          ],
+          "raw": [
+            {
+              "iter": 0,
+              "session_id": "b328b3077ff04ab1a25504ece78cb7c010a054cffbcb45c8894f083479495d6d",
+              "latency_ms": 853.5450409981422
+            },
+            {
+              "iter": 3,
+              "session_id": "b1b4c264be3e4f3c96a507c7fbc1805d40bdb04ffa0645deb642cc847891297e",
+              "latency_ms": 2738.9873329666443
+            },
+            {
+              "iter": 6,
+              "session_id": "ed7be11f8d5149288fed16b3f57f0612780b9728a9cf43939540fb56fab38617",
+              "latency_ms": 824.9038330395706
+            },
+            {
+              "iter": 9,
+              "session_id": "ab014ef30d2941b5b48a2aa57183e883aa3b1fe14e214cc9abb5ff096d537664",
+              "latency_ms": 4735.544875031337
+            },
+            {
+              "iter": 12,
+              "session_id": "6379e20cf99348d6adff11009f60a0bbacec52d351dd4dbea33b02d405d0100a",
+              "latency_ms": 827.5297919753939
+            },
+            {
+              "iter": 15,
+              "session_id": "c97618ccb9994814831e906f67a0f4f149f5d8799238438bbbc71f0cf32992d5",
+              "latency_ms": 4890.294915996492
+            },
+            {
+              "iter": 18,
+              "session_id": "9188710f256743b2a58289050079fed5b8755f711ed04ea9851931dce058a1e5",
+              "latency_ms": 954.4932919670828
+            }
+          ],
+          "stats": {
+            "count": 7,
+            "min": 824.9038330395706,
+            "max": 4890.294915996492,
+            "mean": 2260.76,
+            "p50": 954.49,
+            "p95": 4890.29,
+            "p99": 4890.29
+          }
+        },
+        "voice-bench-ep-2": {
+          "samples": [
+            4721.216875012033,
+            2873.586291039828,
+            2718.092707975302,
+            977.993874985259,
+            1276.376000023447,
+            996.0252909804694,
+            861.061375006102
+          ],
+          "raw": [
+            {
+              "iter": 1,
+              "session_id": "3e77d7483a3f4eff8e562e667de459b0a29739fdac2847e08c683f3105865d5a",
+              "latency_ms": 4721.216875012033
+            },
+            {
+              "iter": 4,
+              "session_id": "e876a93e8d6245c896cfee5fea3eedd36f5150b4c93645e4845680f1fe46e90f",
+              "latency_ms": 2873.586291039828
+            },
+            {
+              "iter": 7,
+              "session_id": "c1fcf66359824265ba263f73f240790905a6bead8fd142b9ad0d89569f6bcec0",
+              "latency_ms": 2718.092707975302
+            },
+            {
+              "iter": 10,
+              "session_id": "153a4c0f769e4c769fc88a1b137b3dbbb22bef7e68ae4b59923775503f02fd80",
+              "latency_ms": 977.993874985259
+            },
+            {
+              "iter": 13,
+              "session_id": "b895dbe41b0a4a26b886e0f20d3796da4a33c7c629e34d228ecc527120c56eaf",
+              "latency_ms": 1276.376000023447
+            },
+            {
+              "iter": 16,
+              "session_id": "524c35e1310d4474901d0d4a17b7ff67f54a173abace483381c333f402eeb956",
+              "latency_ms": 996.0252909804694
+            },
+            {
+              "iter": 19,
+              "session_id": "b4091ab2d8a44d6993030dcbc92ac169ee842a9bc3224e958733013edee9f41f",
+              "latency_ms": 861.061375006102
+            }
+          ],
+          "stats": {
+            "count": 7,
+            "min": 861.061375006102,
+            "max": 4721.216875012033,
+            "mean": 2060.62,
+            "p50": 1276.38,
+            "p95": 4721.22,
+            "p99": 4721.22
+          }
+        },
+        "voice-bench-ep-3": {
+          "samples": [
+            6870.942207984626,
+            959.0947079705074,
+            2652.564332995098,
+            1410.436167032458,
+            4683.243833016604,
+            966.1007499671541
+          ],
+          "raw": [
+            {
+              "iter": 2,
+              "session_id": "741a8d1c6c644571847374535d82249910ca94129e734963a62ee4411ba6d098",
+              "latency_ms": 6870.942207984626
+            },
+            {
+              "iter": 5,
+              "session_id": "ebd2b0c56bfe4b2fb50cee7d16034bbc79e525743f0a452fa3ef240eadf9366e",
+              "latency_ms": 959.0947079705074
+            },
+            {
+              "iter": 8,
+              "session_id": "f6f0b5f7b9944b269ffd021052ac18fca00773fe6e104a4a88a38ef6e67ea563",
+              "latency_ms": 2652.564332995098
+            },
+            {
+              "iter": 11,
+              "session_id": "141b00e54ccb41729702af2aaa074ac537876a58942c488798fda10f068ab48b",
+              "latency_ms": 1410.436167032458
+            },
+            {
+              "iter": 14,
+              "session_id": "a0a1cd13afcd402ab30755798fed254fbad7d9bf57f34040a4a6bc0f5d541868",
+              "latency_ms": 4683.243833016604
+            },
+            {
+              "iter": 17,
+              "session_id": "446d9e1446bd4870a203d5fe4e9d67d7dee08b4c199442beac04021c44de2b73",
+              "latency_ms": 966.1007499671541
+            }
+          ],
+          "stats": {
+            "count": 6,
+            "min": 959.0947079705074,
+            "max": 6870.942207984626,
+            "mean": 2923.73,
+            "p50": 2652.56,
+            "p95": 6870.94,
+            "p99": 6870.94
+          }
+        }
+      },
+      "all_samples": [
+        853.5450409981422,
+        4721.216875012033,
+        6870.942207984626,
+        2738.9873329666443,
+        2873.586291039828,
+        959.0947079705074,
+        824.9038330395706,
+        2718.092707975302,
+        2652.564332995098,
+        4735.544875031337,
+        977.993874985259,
+        1410.436167032458,
+        827.5297919753939,
+        1276.376000023447,
+        4683.243833016604,
+        4890.294915996492,
+        996.0252909804694,
+        966.1007499671541,
+        954.4932919670828,
+        861.061375006102
+      ],
+      "stats": {
+        "count": 20,
+        "min": 824.9038330395706,
+        "max": 6870.942207984626,
+        "mean": 2389.6,
+        "p50": 1276.38,
+        "p95": 6870.94,
+        "p99": 6870.94
+      }
+    },
+    "T8": {
+      "test": "T8",
+      "description": "Same-session 20 pings after warmup (target p50 < 200ms)",
+      "target_p50_ms": 200,
+      "session_id": "5638b3540fb6416c8340c7962b3332f85e98d610b25e4644be00d3feacb63abe",
+      "samples": [
+        222.1694170148112,
+        215.07466700859368,
+        202.6642500422895,
+        222.61004097526893,
+        208.87708402005956,
+        164.73137499997392,
+        224.3782919831574,
+        224.395832978189,
+        220.73670802637935,
+        209.36816703760996,
+        235.8001249958761,
+        207.637874991633,
+        225.12054099934176,
+        172.73520794697106,
+        208.3871249924414,
+        232.32991702388972,
+        223.19754102500156,
+        175.6324169691652,
+        177.8587499866262,
+        173.39637503027916
+      ],
+      "raw": [
+        {
+          "iter": 0,
+          "latency_ms": 222.1694170148112
+        },
+        {
+          "iter": 1,
+          "latency_ms": 215.07466700859368
+        },
+        {
+          "iter": 2,
+          "latency_ms": 202.6642500422895
+        },
+        {
+          "iter": 3,
+          "latency_ms": 222.61004097526893
+        },
+        {
+          "iter": 4,
+          "latency_ms": 208.87708402005956
+        },
+        {
+          "iter": 5,
+          "latency_ms": 164.73137499997392
+        },
+        {
+          "iter": 6,
+          "latency_ms": 224.3782919831574
+        },
+        {
+          "iter": 7,
+          "latency_ms": 224.395832978189
+        },
+        {
+          "iter": 8,
+          "latency_ms": 220.73670802637935
+        },
+        {
+          "iter": 9,
+          "latency_ms": 209.36816703760996
+        },
+        {
+          "iter": 10,
+          "latency_ms": 235.8001249958761
+        },
+        {
+          "iter": 11,
+          "latency_ms": 207.637874991633
+        },
+        {
+          "iter": 12,
+          "latency_ms": 225.12054099934176
+        },
+        {
+          "iter": 13,
+          "latency_ms": 172.73520794697106
+        },
+        {
+          "iter": 14,
+          "latency_ms": 208.3871249924414
+        },
+        {
+          "iter": 15,
+          "latency_ms": 232.32991702388972
+        },
+        {
+          "iter": 16,
+          "latency_ms": 223.19754102500156
+        },
+        {
+          "iter": 17,
+          "latency_ms": 175.6324169691652
+        },
+        {
+          "iter": 18,
+          "latency_ms": 177.8587499866262
+        },
+        {
+          "iter": 19,
+          "latency_ms": 173.39637503027916
+        }
+      ],
+      "stats": {
+        "count": 20,
+        "min": 164.73137499997392,
+        "max": 235.8001249958761,
+        "mean": 207.36,
+        "p50": 209.37,
+        "p95": 235.8,
+        "p99": 235.8
+      }
+    },
+    "T9": {
+      "test": "T9",
+      "description": "Full E2E cancel BK-001 (target p50 < 2000ms)",
+      "target_p50_ms": 2000,
+      "with_prewarm": {
+        "samples": [
+          5084.495124989189,
+          5045.8134160144255,
+          4900.943084037863,
+          4817.256583017297,
+          4943.196334003005
+        ],
+        "stats": {
+          "count": 5,
+          "min": 4817.256583017297,
+          "max": 5084.495124989189,
+          "mean": 4958.34,
+          "p50": 4943.2,
+          "p95": 5084.5,
+          "p99": 5084.5
+        },
+        "raw": [
+          {
+            "latency_ms": 5084.495124989189,
+            "session_id": "16344f3f0f7f4fd6af79fc37eb07a143ecef9a3ff2564b9f9dd5406e3b626f3c",
+            "prewarm": true,
+            "timing": {
+              "total_ms": 4873.534462999995,
+              "llm_ms": 4440.564061999997,
+              "tool_ms": 432.9704009999987,
+              "tool_sum_individual_ms": 596.103762000002,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1333.1066149999983,
+                  "end_ms": 1508.158716999997,
+                  "duration_ms": 175.05210199999865,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3355.2022429999975,
+                  "end_ms": 3518.814401,
+                  "duration_ms": 163.61215800000295,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3355.6810399999968,
+                  "end_ms": 3613.1205419999974,
+                  "duration_ms": 257.4395020000004,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4111,
+              "output_tokens": 368
+            },
+            "iter": 0
+          },
+          {
+            "latency_ms": 5045.8134160144255,
+            "session_id": "8cb5e5bbbf904fd5995fafb7a11586df590a1f0c40a94851bb7511b07fb338e6",
+            "prewarm": true,
+            "timing": {
+              "total_ms": 4820.737699000002,
+              "llm_ms": 4491.670943000003,
+              "tool_ms": 329.0667559999995,
+              "tool_sum_individual_ms": 487.336753000001,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1114.5190470000016,
+                  "end_ms": 1281.9729049999999,
+                  "duration_ms": 167.45385799999823,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3181.8666130000006,
+                  "end_ms": 3340.136610000002,
+                  "duration_ms": 158.26999700000144,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3181.296447000001,
+                  "end_ms": 3342.9093450000023,
+                  "duration_ms": 161.61289800000134,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4110,
+              "output_tokens": 371
+            },
+            "iter": 1
+          },
+          {
+            "latency_ms": 4900.943084037863,
+            "session_id": "13a4d91d23594ff08a00ddd99b5552caafbf390c6f724aea833503d8a11a74c8",
+            "prewarm": true,
+            "timing": {
+              "total_ms": 4722.602331000001,
+              "llm_ms": 4421.489427,
+              "tool_ms": 301.11290400000007,
+              "tool_sum_individual_ms": 452.971557999998,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1076.4874669999997,
+                  "end_ms": 1220.8612979999991,
+                  "duration_ms": 144.37383099999934,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3210.9784800000016,
+                  "end_ms": 3362.8371339999994,
+                  "duration_ms": 151.85865399999798,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3210.351423999999,
+                  "end_ms": 3367.0904969999997,
+                  "duration_ms": 156.73907300000067,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4109,
+              "output_tokens": 394
+            },
+            "iter": 2
+          },
+          {
+            "latency_ms": 4817.256583017297,
+            "session_id": "fb9f902f835144cd908ce893950cc536bf9c9893d6d049a6ba16eecc21223e2c",
+            "prewarm": true,
+            "timing": {
+              "total_ms": 4596.7859240000025,
+              "llm_ms": 4295.052387000005,
+              "tool_ms": 301.7335369999969,
+              "tool_sum_individual_ms": 454.7365669999941,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1154.2998340000033,
+                  "end_ms": 1302.2941390000008,
+                  "duration_ms": 147.99430499999744,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3118.512047000003,
+                  "end_ms": 3271.515077,
+                  "duration_ms": 153.00302999999715,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3118.032814000003,
+                  "end_ms": 3271.7720460000023,
+                  "duration_ms": 153.7392319999995,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4113,
+              "output_tokens": 364
+            },
+            "iter": 3
+          },
+          {
+            "latency_ms": 4943.196334003005,
+            "session_id": "3c759f22b25f44238487565d2f283586367a878bafd042de88359c746a1f79db",
+            "prewarm": true,
+            "timing": {
+              "total_ms": 4711.073109000001,
+              "llm_ms": 4421.0164289999975,
+              "tool_ms": 290.0566800000031,
+              "tool_sum_individual_ms": 421.32648100000125,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1114.1937629999993,
+                  "end_ms": 1257.097269999999,
+                  "duration_ms": 142.90350699999976,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3051.4560939999988,
+                  "end_ms": 3183.3205289999996,
+                  "duration_ms": 131.86443500000067,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3052.050728000001,
+                  "end_ms": 3198.609267000002,
+                  "duration_ms": 146.55853900000082,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4109,
+              "output_tokens": 376
+            },
+            "iter": 4
+          }
+        ]
+      },
+      "without_prewarm": {
+        "samples": [
+          7353.655458020512,
+          5381.344082998112,
+          5320.1384160202,
+          5452.084791962989,
+          5471.23016603291
+        ],
+        "stats": {
+          "count": 5,
+          "min": 5320.1384160202,
+          "max": 7353.655458020512,
+          "mean": 5795.69,
+          "p50": 5452.08,
+          "p95": 7353.66,
+          "p99": 7353.66
+        },
+        "raw": [
+          {
+            "latency_ms": 7353.655458020512,
+            "session_id": "0c6a4a2d36d649fbade81a0700c6c28033603a3258da4e7093340192541e026b",
+            "prewarm": false,
+            "timing": {
+              "total_ms": 4629.034332,
+              "llm_ms": 4310.4451379999955,
+              "tool_ms": 318.5891940000049,
+              "tool_sum_individual_ms": 414.280526000006,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1368.7332659999995,
+                  "end_ms": 1465.0186160000019,
+                  "duration_ms": 96.28535000000227,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 1369.3272840000006,
+                  "end_ms": 1530.6349440000026,
+                  "duration_ms": 161.30766000000207,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 2980.6360000000004,
+                  "end_ms": 3137.323516000002,
+                  "duration_ms": 156.68751600000164,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4144,
+              "output_tokens": 282
+            },
+            "iter": 0
+          },
+          {
+            "latency_ms": 5381.344082998112,
+            "session_id": "45b986dba6d542d595f74426b666b79a4337803c93a348a5af44e48ec8223fee",
+            "prewarm": false,
+            "timing": {
+              "total_ms": 4519.498170000002,
+              "llm_ms": 4200.929315000007,
+              "tool_ms": 318.568854999995,
+              "tool_sum_individual_ms": 411.8453599999974,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1157.954022000002,
+                  "end_ms": 1322.1281729999994,
+                  "duration_ms": 164.17415099999744,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3188.1683689999995,
+                  "end_ms": 3281.4448740000016,
+                  "duration_ms": 93.27650500000217,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3187.700112000002,
+                  "end_ms": 3342.0948159999994,
+                  "duration_ms": 154.39470399999777,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4109,
+              "output_tokens": 371
+            },
+            "iter": 1
+          },
+          {
+            "latency_ms": 5320.1384160202,
+            "session_id": "623f0fdbf8a54a96ab76d2644ea775e44ad3baca727d493c9a772064e6f046e5",
+            "prewarm": false,
+            "timing": {
+              "total_ms": 4488.329605000001,
+              "llm_ms": 4194.310048000003,
+              "tool_ms": 294.01955699999826,
+              "tool_sum_individual_ms": 378.43171200000114,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1229.521891000001,
+                  "end_ms": 1376.278278000001,
+                  "duration_ms": 146.75638699999993,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3238.4400050000013,
+                  "end_ms": 3323.3408660000023,
+                  "duration_ms": 84.90086100000127,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3238.9287109999996,
+                  "end_ms": 3385.7031749999996,
+                  "duration_ms": 146.77446399999994,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4106,
+              "output_tokens": 360
+            },
+            "iter": 2
+          },
+          {
+            "latency_ms": 5452.084791962989,
+            "session_id": "3cc564fe24454b679980d56edfd8e1762bc3e0819ef34a9e9d37b6802ded6b8f",
+            "prewarm": false,
+            "timing": {
+              "total_ms": 4683.6784389999975,
+              "llm_ms": 4395.979693000001,
+              "tool_ms": 287.6987459999966,
+              "tool_sum_individual_ms": 377.8399309999969,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1030.5205740000006,
+                  "end_ms": 1179.778215999999,
+                  "duration_ms": 149.25764199999847,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3303.511872999998,
+                  "end_ms": 3393.653057999998,
+                  "duration_ms": 90.14118500000023,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3303.050573,
+                  "end_ms": 3441.491676999998,
+                  "duration_ms": 138.4411039999982,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4110,
+              "output_tokens": 370
+            },
+            "iter": 3
+          },
+          {
+            "latency_ms": 5471.23016603291,
+            "session_id": "e0f3cc805cd74e9a8be674db3ba1a4238511d357ce1a4816b18463acaf6005d1",
+            "prewarm": false,
+            "timing": {
+              "total_ms": 4684.798128,
+              "llm_ms": 4448.318485000001,
+              "tool_ms": 236.47964299999944,
+              "tool_sum_individual_ms": 323.7428649999998,
+              "ttft_ms": null,
+              "tools": [
+                {
+                  "name": "get_reservation",
+                  "start_ms": 1440.2406859999992,
+                  "end_ms": 1584.254885,
+                  "duration_ms": 144.0141990000008,
+                  "ok": true
+                },
+                {
+                  "name": "check_eligibility",
+                  "start_ms": 3427.8276870000004,
+                  "end_ms": 3515.5751670000013,
+                  "duration_ms": 87.74748000000088,
+                  "ok": true
+                },
+                {
+                  "name": "get_refund_method",
+                  "start_ms": 3428.311945000001,
+                  "end_ms": 3520.293130999999,
+                  "duration_ms": 91.98118599999816,
+                  "ok": true
+                }
+              ],
+              "parallel_tools": true,
+              "num_turns": 4
+            },
+            "usage": {
+              "input_tokens": 4105,
+              "output_tokens": 365
+            },
+            "iter": 4
+          }
+        ]
+      }
+    },
+    "T10": {
+      "test": "T10",
+      "description": "Burst 15 concurrent new-session pings",
+      "cold_start_threshold_ms": 1500.0,
+      "warm_count": 11,
+      "cold_count": 4,
+      "warm_stats": {
+        "count": 11,
+        "min": 826.2675830046646,
+        "max": 1495.8350409870036,
+        "mean": 1189.55,
+        "p50": 1186.95,
+        "p95": 1495.84,
+        "p99": 1495.84
+      },
+      "cold_stats": {
+        "count": 4,
+        "min": 6047.04837501049,
+        "max": 8187.809875002131,
+        "mean": 6653.1,
+        "p50": 6146.78,
+        "p95": 8187.81,
+        "p99": 8187.81
+      },
+      "all_stats": {
+        "count": 15,
+        "min": 826.2675830046646,
+        "max": 8187.809875002131,
+        "mean": 2646.5,
+        "p50": 1231.28,
+        "p95": 8187.81,
+        "p99": 8187.81
+      },
+      "raw": [
+        {
+          "idx": 0,
+          "session_id": "7d0480f905254095a796862ac0899711a0708a6dc3fd43479cccb4cb3e550b1e",
+          "latency_ms": 1231.2812499585561,
+          "warm": true
+        },
+        {
+          "idx": 1,
+          "session_id": "8b26f52e1e974416bb3c744c73f95aec76c4b98fcce34232ba6e507d98083a96",
+          "latency_ms": 826.2675830046646,
+          "warm": true
+        },
+        {
+          "idx": 2,
+          "session_id": "db8f1c6adea74dfb94102ecb19a08eb942eff026d8b34b4993136a558dd7eba9",
+          "latency_ms": 1289.3152089673094,
+          "warm": true
+        },
+        {
+          "idx": 3,
+          "session_id": "36464da860f94d90be8dbb560aca3267831e20a51a5c4503b193129d0d52facb",
+          "latency_ms": 6230.75212497497,
+          "warm": false
+        },
+        {
+          "idx": 4,
+          "session_id": "561ac7d9dc10420684625889311385ddab618e8e0f3c4cc0890f01643ae537a9",
+          "latency_ms": 1161.583250039257,
+          "warm": true
+        },
+        {
+          "idx": 5,
+          "session_id": "4678e6cf451a4e469af4540246a349f1e5168a04fb764319a3b6e02298780692",
+          "latency_ms": 1161.1845419974998,
+          "warm": true
+        },
+        {
+          "idx": 6,
+          "session_id": "8243ce2e4285458daa062d6fdead6b29bb2a184c6b3a4ef981ad127808d5e9e1",
+          "latency_ms": 1271.8463750206865,
+          "warm": true
+        },
+        {
+          "idx": 7,
+          "session_id": "c0acab564f6948c484488610fe560b5289f18250b51a4c5e8e4bd55f95791a69",
+          "latency_ms": 6047.04837501049,
+          "warm": false
+        },
+        {
+          "idx": 8,
+          "session_id": "90be8814af1247b3b3ac1f3551e5e7cb25db88cfbb1e42789fb9db579a5d51ba",
+          "latency_ms": 1229.3867080006748,
+          "warm": true
+        },
+        {
+          "idx": 9,
+          "session_id": "3045561719694580adae3ef59d5cacd39a446157ead24ac6b1ac7d53c3b79874",
+          "latency_ms": 1186.9514579884708,
+          "warm": true
+        },
+        {
+          "idx": 10,
+          "session_id": "afdd9b4c45af43a4942a612e19f39141469cf663ef1342e8acf1a91452344152",
+          "latency_ms": 1125.0169579870999,
+          "warm": true
+        },
+        {
+          "idx": 11,
+          "session_id": "9a55c01df397479ebd9b91c9216bd7967af095fd121848819e15330359759f08",
+          "latency_ms": 1106.3916250132024,
+          "warm": true
+        },
+        {
+          "idx": 12,
+          "session_id": "ca2f4aeb6a5146e79592230017fd683b1c04838b9a2a490da4d4cbfd48112a3e",
+          "latency_ms": 1495.8350409870036,
+          "warm": true
+        },
+        {
+          "idx": 13,
+          "session_id": "5b96f07ad77a4cc4b1e2e8e3269040bb12380874aa744ebd87fe2f1f3de0bb04",
+          "latency_ms": 6146.779832954053,
+          "warm": false
+        },
+        {
+          "idx": 14,
+          "session_id": "d754f59b1aa04afebf9bb122310f8df010cbc8796a004dea87391a19df406b86",
+          "latency_ms": 8187.809875002131,
+          "warm": false
+        }
+      ]
+    },
+    "T11": {
+      "test": "T11",
+      "description": "Streaming TTFB (text/event-stream SSE); NOTE: replaces impossible client-WebSocket test",
+      "with_prewarm": {
+        "ttfb_samples": [
+          4625.586665992159,
+          4490.623374993447,
+          4253.400207962841,
+          3807.812292012386,
+          4397.455750033259,
+          5445.373916008975,
+          4329.010249988642,
+          4588.133457989898,
+          4718.677249969915,
+          4256.296958017629
+        ],
+        "stats": {
+          "count": 10,
+          "min": 3807.812292012386,
+          "max": 5445.373916008975,
+          "mean": 4491.24,
+          "p50": 4490.62,
+          "p95": 5445.37,
+          "p99": 5445.37
+        }
+      },
+      "without_prewarm": {
+        "ttfb_samples": [
+          4951.9131249981,
+          6080.623332993127,
+          4787.221750011668,
+          5539.6032920107245,
+          5040.3403749805875,
+          5207.429332949687,
+          4775.142792030238,
+          8962.827791983727,
+          5727.984584053047,
+          10773.937457997818
+        ],
+        "stats": {
+          "count": 10,
+          "min": 4775.142792030238,
+          "max": 10773.937457997818,
+          "mean": 6184.7,
+          "p50": 5539.6,
+          "p95": 10773.94,
+          "p99": 10773.94
+        }
+      },
+      "raw": [
+        {
+          "latency_ms": 4829.1872079716995,
+          "ttfb_ms": 4625.586665992159,
+          "session_id": "5176fd7c93e6459985c4741e69efc0fbc86926adc78b42769d7e5ab9872141cd",
+          "prewarm": true,
+          "num_chunks": 28,
+          "iter": 0
+        },
+        {
+          "latency_ms": 4853.877125016879,
+          "ttfb_ms": 4490.623374993447,
+          "session_id": "ed88313b983c4677ab37b3507c2284fa2e674a1b5e4347ceb10632cf7e8466fc",
+          "prewarm": true,
+          "num_chunks": 35,
+          "iter": 1
+        },
+        {
+          "latency_ms": 4669.951957999729,
+          "ttfb_ms": 4253.400207962841,
+          "session_id": "9540beba08884ee7974115c354c2f4b6236e5e1205bf4ab99aec8da8170aff42",
+          "prewarm": true,
+          "num_chunks": 34,
+          "iter": 2
+        },
+        {
+          "latency_ms": 4242.887583037373,
+          "ttfb_ms": 3807.812292012386,
+          "session_id": "ec13e5f4cfb942faa0d00f4567ca264c6e548cd954684681b9012eaf6265a087",
+          "prewarm": true,
+          "num_chunks": 36,
+          "iter": 3
+        },
+        {
+          "latency_ms": 4946.019500028342,
+          "ttfb_ms": 4397.455750033259,
+          "session_id": "087b0c70ba9f4d4899cd310b9e2d50361d4fcf1edc754faebb08f4edea707639",
+          "prewarm": true,
+          "num_chunks": 45,
+          "iter": 4
+        },
+        {
+          "latency_ms": 5810.375833010767,
+          "ttfb_ms": 5445.373916008975,
+          "session_id": "cf26d8030e25490eb2c1f9de89cd3d8ddb4564769bab49c19e970235d0d3c5dc",
+          "prewarm": true,
+          "num_chunks": 34,
+          "iter": 5
+        },
+        {
+          "latency_ms": 4762.347124982625,
+          "ttfb_ms": 4329.010249988642,
+          "session_id": "3546b25a1da444748b6e66af7f72bbb5b685a9d343374d42bcea496f90f39a83",
+          "prewarm": true,
+          "num_chunks": 38,
+          "iter": 6
+        },
+        {
+          "latency_ms": 4903.705374978017,
+          "ttfb_ms": 4588.133457989898,
+          "session_id": "dff18fc8501248a1ac2d4648b1d47c4d3cfdbb9f5f5a4926a1005167d9946480",
+          "prewarm": true,
+          "num_chunks": 32,
+          "iter": 7
+        },
+        {
+          "latency_ms": 5150.135791976936,
+          "ttfb_ms": 4718.677249969915,
+          "session_id": "a4a6223590064a029b8658fff9f79ed9c2ec7308d485486e8107a3389dec96d7",
+          "prewarm": true,
+          "num_chunks": 38,
+          "iter": 8
+        },
+        {
+          "latency_ms": 4896.6736670117825,
+          "ttfb_ms": 4256.296958017629,
+          "session_id": "d5c607b0f5f9406589fbe2c3f102d82d554da34bb0014bd49a8455a4a9abb04e",
+          "prewarm": true,
+          "num_chunks": 46,
+          "iter": 9
+        },
+        {
+          "latency_ms": 5189.00291697355,
+          "ttfb_ms": 4951.9131249981,
+          "session_id": "6bfaafe565ee4fda8a51af1d11072d74ec43e1af1b0649e08c25567ddd55e345",
+          "prewarm": false,
+          "num_chunks": 30,
+          "iter": 0
+        },
+        {
+          "latency_ms": 6513.288249960169,
+          "ttfb_ms": 6080.623332993127,
+          "session_id": "bd9689a2de414daba4691462df251dd0732a0d1c5c9e40798e86b8f260381cb7",
+          "prewarm": false,
+          "num_chunks": 38,
+          "iter": 1
+        },
+        {
+          "latency_ms": 5098.970583989285,
+          "ttfb_ms": 4787.221750011668,
+          "session_id": "d9105b1cef364bc0897bec33d32660ed0553b1d9476c4ab196b0a53f2b0fd3f3",
+          "prewarm": false,
+          "num_chunks": 34,
+          "iter": 2
+        },
+        {
+          "latency_ms": 5635.581292037386,
+          "ttfb_ms": 5539.6032920107245,
+          "session_id": "b76932c664aa4458b180d10ebc2b2a1097b7428f38674d06801e02d168e5a23f",
+          "prewarm": false,
+          "num_chunks": 26,
+          "iter": 3
+        },
+        {
+          "latency_ms": 5282.604124979116,
+          "ttfb_ms": 5040.3403749805875,
+          "session_id": "b8ea3dbddfbc415d9383be978ab0f0c6a86816434f034cdfb6e4dfc0a832c9fc",
+          "prewarm": false,
+          "num_chunks": 31,
+          "iter": 4
+        },
+        {
+          "latency_ms": 5697.760124981869,
+          "ttfb_ms": 5207.429332949687,
+          "session_id": "2eec204b96d2487da3636ab1142b80c35cdee928bd4e46f89f31dee9674e2add",
+          "prewarm": false,
+          "num_chunks": 39,
+          "iter": 5
+        },
+        {
+          "latency_ms": 5296.802417025901,
+          "ttfb_ms": 4775.142792030238,
+          "session_id": "e6badc99128d4035a0d80aca341dcc7d8aa5e8b72d91403aa199fcf6a5ff198e",
+          "prewarm": false,
+          "num_chunks": 41,
+          "iter": 6
+        },
+        {
+          "latency_ms": 9203.689291956834,
+          "ttfb_ms": 8962.827791983727,
+          "session_id": "cc3761119af4472fb41c444f51c6a5ca2398c0cac00647c0906d0db2de4e7e06",
+          "prewarm": false,
+          "num_chunks": 28,
+          "iter": 7
+        },
+        {
+          "latency_ms": 6045.153709012084,
+          "ttfb_ms": 5727.984584053047,
+          "session_id": "9b4fccd91a314513b57ed75f49164a5d223dafd761c441cc94c9e059651ef264",
+          "prewarm": false,
+          "num_chunks": 34,
+          "iter": 8
+        },
+        {
+          "latency_ms": 11080.162832979113,
+          "ttfb_ms": 10773.937457997818,
+          "session_id": "dbdcb701b6414fd292e2f85cadfe92425f8ceee1cd5d4f9a9d990325306bfa8e",
+          "prewarm": false,
+          "num_chunks": 31,
+          "iter": 9
+        }
+      ]
+    },
+    "T12": {
+      "test": "T12",
+      "description": "Streaming TTFT (target TTFT p50 < 1500ms)",
+      "target_ttft_p50_ms": 1500,
+      "ttft_stats": {
+        "count": 20,
+        "min": 3940.419291961007,
+        "max": 5626.67974998476,
+        "mean": 4651.34,
+        "p50": 4423.97,
+        "p95": 5626.68,
+        "p99": 5626.68
+      },
+      "total_stats": {
+        "count": 20,
+        "min": 4276.72437496949,
+        "max": 6105.765042011626,
+        "mean": 5020.55,
+        "p50": 4728.53,
+        "p95": 6105.77,
+        "p99": 6105.77
+      },
+      "delta_stats": {
+        "count": 20,
+        "min": 226.00900003453717,
+        "max": 511.5027920110151,
+        "mean": 369.21,
+        "p50": 362.37,
+        "p95": 511.5,
+        "p99": 511.5
+      },
+      "raw": [
+        {
+          "iter": 0,
+          "session_id": "54d72c5b49bc4bf9ae8bc839c882cd0ed363205036bc4307b4a61cd42a55392c",
+          "ttft_ms": 5138.4856249787845,
+          "total_ms": 5616.811540967319,
+          "done_timing": {
+            "total_ms": 5412.500227000002,
+            "llm_ms": 5133.465551000001,
+            "tool_ms": 279.0346760000016,
+            "tool_sum_individual_ms": 405.99985400000446,
+            "ttft_ms": 782.1183890000008,
+            "tools": [
+              {
+                "name": "check_eligibility",
+                "start_ms": 1300.418811,
+                "end_ms": 1427.3839890000027,
+                "duration_ms": 126.96517800000251,
+                "ok": true
+              },
+              {
+                "name": "get_reservation",
+                "start_ms": 1299.9454660000006,
+                "end_ms": 1457.1898960000026,
+                "duration_ms": 157.2444300000022,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3835.3205280000006,
+                "end_ms": 3957.110774,
+                "duration_ms": 121.79024599999977,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 1,
+          "session_id": "876ae4c8af4440b484ccdb660577e1f017a9a2005c544d2589345bbbef599e84",
+          "ttft_ms": 4616.072042030282,
+          "total_ms": 4958.458167035133,
+          "done_timing": {
+            "total_ms": 4760.428755,
+            "llm_ms": 4500.132872999999,
+            "tool_ms": 260.29588200000126,
+            "tool_sum_individual_ms": 390.57145900000023,
+            "ttft_ms": 1071.208672000001,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1446.143438,
+                "end_ms": 1572.3425040000016,
+                "duration_ms": 126.19906600000164,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3442.5286180000007,
+                "end_ms": 3572.8041949999997,
+                "duration_ms": 130.27557699999903,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3442.056546,
+                "end_ms": 3576.1533619999996,
+                "duration_ms": 134.09681599999956,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 2,
+          "session_id": "34560ff7e3904a17b552f3aa46089aa352187e944984419a875405d690ff8023",
+          "ttft_ms": 4342.4854159820825,
+          "total_ms": 4722.446415980812,
+          "done_timing": {
+            "total_ms": 4499.170693,
+            "llm_ms": 4220.590131999998,
+            "tool_ms": 278.5805610000016,
+            "tool_sum_individual_ms": 393.11283500000013,
+            "ttft_ms": 717.7384690000004,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1069.7561749999984,
+                "end_ms": 1226.591029999998,
+                "duration_ms": 156.8348549999996,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3143.4916549999984,
+                "end_ms": 3258.6395109999985,
+                "duration_ms": 115.1478560000001,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3144.107237,
+                "end_ms": 3265.2373610000004,
+                "duration_ms": 121.13012400000045,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 3,
+          "session_id": "1654905b95ce415db89dd90d911796a9e80227b5aeb745599c366c612f7631bc",
+          "ttft_ms": 4977.254208002705,
+          "total_ms": 5390.589791000821,
+          "done_timing": {
+            "total_ms": 5170.523061000001,
+            "llm_ms": 4886.098207999999,
+            "tool_ms": 284.4248530000009,
+            "tool_sum_individual_ms": 383.38009399999964,
+            "ttft_ms": 863.713090000001,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1338.8623489999993,
+                "end_ms": 1488.2424840000006,
+                "duration_ms": 149.38013500000125,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3583.731646,
+                "end_ms": 3682.686886999999,
+                "duration_ms": 98.95524099999875,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3583.1593049999988,
+                "end_ms": 3718.2040229999984,
+                "duration_ms": 135.04471799999962,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 4,
+          "session_id": "d7759655f17a4e7889151b7c3317e09a20428915f3724ee7a1e10e0a8c4827eb",
+          "ttft_ms": 4363.503540982492,
+          "total_ms": 4704.426374984905,
+          "done_timing": {
+            "total_ms": 4469.758718000001,
+            "llm_ms": 4223.624130999997,
+            "tool_ms": 246.13458700000388,
+            "tool_sum_individual_ms": 390.1350860000043,
+            "ttft_ms": 886.3700889999997,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1225.2884060000006,
+                "end_ms": 1324.0816780000025,
+                "duration_ms": 98.79327200000176,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3156.598875,
+                "end_ms": 3301.046737,
+                "duration_ms": 144.44786199999982,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3157.0462379999994,
+                "end_ms": 3303.940190000002,
+                "duration_ms": 146.89395200000277,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 5,
+          "session_id": "e297ad46b3874a2983a965c19bc99437277b78b497584c19bd6ebb0db71006ac",
+          "ttft_ms": 4502.947499975562,
+          "total_ms": 5014.450291986577,
+          "done_timing": {
+            "total_ms": 4816.882339999996,
+            "llm_ms": 4575.443415999995,
+            "tool_ms": 241.4389240000005,
+            "tool_sum_individual_ms": 332.9552890000045,
+            "ttft_ms": 986.6739349999989,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1310.8458649999975,
+                "end_ms": 1449.366931,
+                "duration_ms": 138.5210660000027,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3394.707491000002,
+                "end_ms": 3486.923999000002,
+                "duration_ms": 92.21650799999992,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3395.407633999998,
+                "end_ms": 3497.625349,
+                "duration_ms": 102.21771500000187,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 6,
+          "session_id": "e2e4e1a648894a0a9b1f26bc32308588dcaf4160de964f47be7201bbc092d9f7",
+          "ttft_ms": 5565.781874989625,
+          "total_ms": 5792.975333984941,
+          "done_timing": {
+            "total_ms": 5568.250630999998,
+            "llm_ms": 5326.549291999996,
+            "tool_ms": 241.70133900000246,
+            "tool_sum_individual_ms": 330.72519000000256,
+            "ttft_ms": 1088.4249080000004,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1423.4384569999995,
+                "end_ms": 1523.2348860000009,
+                "duration_ms": 99.7964290000013,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 4221.481695999998,
+                "end_ms": 4311.2157179999995,
+                "duration_ms": 89.7340220000018,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 4222.191867,
+                "end_ms": 4363.386605999999,
+                "duration_ms": 141.19473899999946,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 7,
+          "session_id": "7c0e41c00ec74cb489313887ad0690fbaa13984cbfa545fe9e1be9648dd0c33a",
+          "ttft_ms": 4398.094374977518,
+          "total_ms": 4698.052915977314,
+          "done_timing": {
+            "total_ms": 4523.964066000001,
+            "llm_ms": 4269.195459999999,
+            "tool_ms": 254.76860600000214,
+            "tool_sum_individual_ms": 345.6874470000031,
+            "ttft_ms": 908.1611720000034,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1257.926953000002,
+                "end_ms": 1413.8392370000013,
+                "duration_ms": 155.91228399999935,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3144.0701850000005,
+                "end_ms": 3235.625328000001,
+                "duration_ms": 91.55514300000078,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3144.7064870000004,
+                "end_ms": 3242.9265070000033,
+                "duration_ms": 98.22002000000296,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 8,
+          "session_id": "265e1f86166c47ad9abbd99e460edfd6efd67c96f49e4b478727a4c056a3fc93",
+          "ttft_ms": 5253.974457969889,
+          "total_ms": 5479.983458004426,
+          "done_timing": {
+            "total_ms": 5249.1856579999985,
+            "llm_ms": 4960.151844999999,
+            "tool_ms": 289.0338129999993,
+            "tool_sum_individual_ms": 402.3136650000012,
+            "ttft_ms": 911.2502879999979,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1207.8654749999985,
+                "end_ms": 1352.408399999998,
+                "duration_ms": 144.54292499999966,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3548.642726999997,
+                "end_ms": 3661.9225789999987,
+                "duration_ms": 113.27985200000157,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3548.067292999999,
+                "end_ms": 3692.558180999999,
+                "duration_ms": 144.49088799999998,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 9,
+          "session_id": "1347a8a6ed1e43ce934e2eb7263ab1f204f00abeef854a7192186a39b75d3570",
+          "ttft_ms": 5626.67974998476,
+          "total_ms": 6105.765042011626,
+          "done_timing": {
+            "total_ms": 5876.162379,
+            "llm_ms": 5565.583032000002,
+            "tool_ms": 310.57934699999805,
+            "tool_sum_individual_ms": 450.43193399999734,
+            "ttft_ms": 1637.283033000003,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1981.3467780000024,
+                "end_ms": 2136.9950160000003,
+                "duration_ms": 155.64823799999772,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 4368.770906000002,
+                "end_ms": 4509.348670000001,
+                "duration_ms": 140.57776399999966,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 4369.496083000002,
+                "end_ms": 4523.702015000002,
+                "duration_ms": 154.205932,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 10,
+          "session_id": "d8d84231fc3241b7bf3e93178ba60a9cf6a75c87e57942d3844119f897a77421",
+          "ttft_ms": 4423.968709015753,
+          "total_ms": 4728.529624990188,
+          "done_timing": {
+            "total_ms": 4533.282615999998,
+            "llm_ms": 4291.725630999998,
+            "tool_ms": 241.55698499999903,
+            "tool_sum_individual_ms": 346.41748499999994,
+            "ttft_ms": 736.9301659999969,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1109.3116689999968,
+                "end_ms": 1204.4880369999973,
+                "duration_ms": 95.17636800000062,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3016.7499179999986,
+                "end_ms": 3122.0853329999977,
+                "duration_ms": 105.33541499999899,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3017.2248329999966,
+                "end_ms": 3163.130534999997,
+                "duration_ms": 145.9057020000003,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 11,
+          "session_id": "8b4264bfbee74cfb9dd7bcde7603192c8d309117dea243318877daeefb3ceaa2",
+          "ttft_ms": 4191.574792028405,
+          "total_ms": 4619.394458015449,
+          "done_timing": {
+            "total_ms": 4413.694508999999,
+            "llm_ms": 4180.522537999998,
+            "tool_ms": 233.17197100000067,
+            "tool_sum_individual_ms": 327.08780599999795,
+            "ttft_ms": 991.5753769999967,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1528.3955349999978,
+                "end_ms": 1622.770059999997,
+                "duration_ms": 94.37452499999921,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 1528.8542249999998,
+                "end_ms": 1666.6688239999985,
+                "duration_ms": 137.8145989999986,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3112.1991679999965,
+                "end_ms": 3207.0978499999965,
+                "duration_ms": 94.89868200000018,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 12,
+          "session_id": "9e685a4ac43c477aa13da5393e1fa7c28924ec4b09b944fdbcd8969b690b32af",
+          "ttft_ms": 3940.419291961007,
+          "total_ms": 4308.292916975915,
+          "done_timing": {
+            "total_ms": 4105.681015000002,
+            "llm_ms": 3834.5437500000016,
+            "tool_ms": 271.1372650000004,
+            "tool_sum_individual_ms": 374.5833629999993,
+            "ttft_ms": 597.2031169999993,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 964.1012500000023,
+                "end_ms": 1098.8095570000028,
+                "duration_ms": 134.70830700000036,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 2771.009291000002,
+                "end_ms": 2874.455389000001,
+                "duration_ms": 103.44609799999915,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 2770.177427,
+                "end_ms": 2906.606385,
+                "duration_ms": 136.42895799999977,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 13,
+          "session_id": "b9d6b678cd6a45c989952ae275f5d566d4832e87ff884c14a6c3042d05cc043d",
+          "ttft_ms": 5499.90254099248,
+          "total_ms": 5733.773457992356,
+          "done_timing": {
+            "total_ms": 5524.909652999998,
+            "llm_ms": 5212.832195999998,
+            "tool_ms": 312.0774570000008,
+            "tool_sum_individual_ms": 444.78072700000126,
+            "ttft_ms": 824.53718,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1220.464719999999,
+                "end_ms": 1374.3094049999982,
+                "duration_ms": 153.84468499999926,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3228.439109,
+                "end_ms": 3361.1423790000003,
+                "duration_ms": 132.70327000000037,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3227.874759999999,
+                "end_ms": 3386.1075320000004,
+                "duration_ms": 158.23277200000163,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 14,
+          "session_id": "cd10d39a44214cc6bc798c2f3aff58cc353123066e2542f2b569f269035b089b",
+          "ttft_ms": 3949.839749955572,
+          "total_ms": 4276.72437496949,
+          "done_timing": {
+            "total_ms": 4095.0571469999986,
+            "llm_ms": 3872.9552699999986,
+            "tool_ms": 222.10187700000006,
+            "tool_sum_individual_ms": 344.8829589999996,
+            "ttft_ms": 730.2935509999991,
+            "tools": [
+              {
+                "name": "check_eligibility",
+                "start_ms": 1254.0688349999982,
+                "end_ms": 1376.8499169999977,
+                "duration_ms": 122.78108199999949,
+                "ok": true
+              },
+              {
+                "name": "get_reservation",
+                "start_ms": 1253.6000799999983,
+                "end_ms": 1385.3204229999997,
+                "duration_ms": 131.72034300000135,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 2702.013062999999,
+                "end_ms": 2792.3945969999977,
+                "duration_ms": 90.38153399999871,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 15,
+          "session_id": "7d2ceb35bd8141cfa3bdcdbee87f56b800677cb4d0ac41f3ba6792cb5aad25f4",
+          "ttft_ms": 4192.690291965846,
+          "total_ms": 4593.759708979633,
+          "done_timing": {
+            "total_ms": 4399.942187999997,
+            "llm_ms": 4131.672542999997,
+            "tool_ms": 268.2696450000001,
+            "tool_sum_individual_ms": 396.2530459999982,
+            "ttft_ms": 878.1345959999989,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1245.2520679999993,
+                "end_ms": 1361.583178,
+                "duration_ms": 116.33111000000085,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3107.2248239999994,
+                "end_ms": 3235.2082249999976,
+                "duration_ms": 127.98340099999805,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3106.484655999999,
+                "end_ms": 3258.4231909999985,
+                "duration_ms": 151.93853499999932,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 16,
+          "session_id": "61f066091821448e978a4fe5832cbe943146d5d74793446fbdffe9c54cc5cb04",
+          "ttft_ms": 4280.859999998938,
+          "total_ms": 4635.878250002861,
+          "done_timing": {
+            "total_ms": 4433.281926999999,
+            "llm_ms": 4155.747886,
+            "tool_ms": 277.534040999999,
+            "tool_sum_individual_ms": 430.56994299999826,
+            "ttft_ms": 820.955166000001,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1326.8960880000016,
+                "end_ms": 1480.7343280000005,
+                "duration_ms": 153.8382399999989,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 1327.6984260000013,
+                "end_ms": 1492.703412000001,
+                "duration_ms": 165.00498599999958,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3079.486663000001,
+                "end_ms": 3191.2133800000006,
+                "duration_ms": 111.72671699999981,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 17,
+          "session_id": "ff2233cea8bf42dfbf297630f2f38c87c70470e973c9428295f78a58331e57aa",
+          "ttft_ms": 4879.717540985439,
+          "total_ms": 5345.469582942314,
+          "done_timing": {
+            "total_ms": 5144.404609999999,
+            "llm_ms": 4824.805839999996,
+            "tool_ms": 319.5987700000021,
+            "tool_sum_individual_ms": 418.8701160000044,
+            "ttft_ms": 940.2806619999992,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1348.9396809999973,
+                "end_ms": 1448.6947709999995,
+                "duration_ms": 99.75509000000216,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 1349.4234249999977,
+                "end_ms": 1495.9435919999996,
+                "duration_ms": 146.52016700000203,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 2881.9146559999995,
+                "end_ms": 3054.5095149999993,
+                "duration_ms": 172.59485900000016,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 18,
+          "session_id": "87be712f0c194ecb83c29b3c8a5d29dd1fbbf2d5f9064c30a469c65b5d1c4640",
+          "ttft_ms": 4880.479416984599,
+          "total_ms": 5320.809791970532,
+          "done_timing": {
+            "total_ms": 5101.090741,
+            "llm_ms": 4855.358319000001,
+            "tool_ms": 245.7324219999996,
+            "tool_sum_individual_ms": 346.29932200000013,
+            "ttft_ms": 1855.5318619999994,
+            "tools": [
+              {
+                "name": "check_eligibility",
+                "start_ms": 2301.8896049999994,
+                "end_ms": 2402.456505,
+                "duration_ms": 100.56690000000046,
+                "ok": true
+              },
+              {
+                "name": "get_reservation",
+                "start_ms": 2301.296079,
+                "end_ms": 2405.0707739999984,
+                "duration_ms": 103.77469499999847,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3698.678566999998,
+                "end_ms": 3840.6362939999995,
+                "duration_ms": 141.9577270000012,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        },
+        {
+          "iter": 19,
+          "session_id": "d5a6d6ba8c0f4b57ba1320e1d9f6a8b3604cba9c0d1c4f5584d8d00ceffd8532",
+          "ttft_ms": 4002.0124170114286,
+          "total_ms": 4364.381207968108,
+          "done_timing": {
+            "total_ms": 4148.868072000003,
+            "llm_ms": 3872.308544000003,
+            "tool_ms": 276.559528,
+            "tool_sum_individual_ms": 413.5417329999989,
+            "ttft_ms": 726.531835000003,
+            "tools": [
+              {
+                "name": "check_eligibility",
+                "start_ms": 1260.4130760000025,
+                "end_ms": 1397.3952810000014,
+                "duration_ms": 136.9822049999989,
+                "ok": true
+              },
+              {
+                "name": "get_reservation",
+                "start_ms": 1259.9383720000005,
+                "end_ms": 1412.1956010000006,
+                "duration_ms": 152.25722899999994,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 2785.773468000002,
+                "end_ms": 2910.075767000002,
+                "duration_ms": 124.302299,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          }
+        }
+      ]
+    },
+    "T13": {
+      "test": "T13",
+      "description": "Multi-turn: turn2 on same warm session (target p50 < 1500ms)",
+      "target_p50_ms": 1500,
+      "turn2_stats": {
+        "count": 5,
+        "min": 4097.3714999854565,
+        "max": 5423.3247909578495,
+        "mean": 4524.48,
+        "p50": 4188.9,
+        "p95": 5423.32,
+        "p99": 5423.32
+      },
+      "raw": [
+        {
+          "iter": 0,
+          "session_id": "5f1ffe3222ba4cddbe7db206958e82cf907cbe11dc184d6b9ecae8b63d61ce73",
+          "turn1_ms": 5968.556375009939,
+          "turn2_ms": 5423.3247909578495,
+          "turn1_timing": {
+            "total_ms": 5747.792598,
+            "llm_ms": 5463.978297000001,
+            "tool_ms": 283.81430099999966,
+            "tool_sum_individual_ms": 388.9471829999991,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1165.4101719999978,
+                "end_ms": 1316.5456059999983,
+                "duration_ms": 151.1354340000004,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3453.9782019999984,
+                "end_ms": 3559.111083999998,
+                "duration_ms": 105.13288199999948,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3453.404393,
+                "end_ms": 3586.083259999999,
+                "duration_ms": 132.6788669999992,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          },
+          "turn2_timing": {
+            "total_ms": 5191.783631,
+            "llm_ms": 4771.565489999994,
+            "tool_ms": 420.21814100000665,
+            "tool_sum_individual_ms": 420.21814100000654,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "execute_cancellation",
+                "start_ms": 1225.1657010000017,
+                "end_ms": 1347.7696150000043,
+                "duration_ms": 122.60391400000259,
+                "ok": true
+              },
+              {
+                "name": "execute_cancellation",
+                "start_ms": 2804.081029999999,
+                "end_ms": 3101.695257000003,
+                "duration_ms": 297.61422700000395,
+                "ok": true
+              }
+            ],
+            "parallel_tools": false,
+            "num_turns": 3
+          }
+        },
+        {
+          "iter": 1,
+          "session_id": "43da55eb455e4e14809252647401f733dd1152e3a96b4c868d052ae3fc7671fc",
+          "turn1_ms": 6863.270249974448,
+          "turn2_ms": 4097.3714999854565,
+          "turn1_timing": {
+            "total_ms": 6684.123405999998,
+            "llm_ms": 6444.058261999999,
+            "tool_ms": 240.0651439999997,
+            "tool_sum_individual_ms": 329.57200199999903,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 2193.4458929999996,
+                "end_ms": 2306.6143550000006,
+                "duration_ms": 113.16846200000086,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 4314.0291529999995,
+                "end_ms": 4404.003562,
+                "duration_ms": 89.97440899999987,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 4314.496704,
+                "end_ms": 4440.925834999998,
+                "duration_ms": 126.4291309999983,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          },
+          "turn2_timing": {
+            "total_ms": 3915.523596,
+            "llm_ms": 3520.067058999998,
+            "tool_ms": 395.4565370000016,
+            "tool_sum_individual_ms": 395.45653700000116,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "execute_cancellation",
+                "start_ms": 1168.5129430000031,
+                "end_ms": 1225.3635030000041,
+                "duration_ms": 56.85056000000088,
+                "ok": true
+              },
+              {
+                "name": "execute_cancellation",
+                "start_ms": 2247.522777,
+                "end_ms": 2586.1287540000008,
+                "duration_ms": 338.6059770000003,
+                "ok": true
+              }
+            ],
+            "parallel_tools": false,
+            "num_turns": 3
+          }
+        },
+        {
+          "iter": 2,
+          "session_id": "5c21089a04984969942a9c72444a27500872afde10c645a4ac9df8840efa2ca8",
+          "turn1_ms": 5594.569834007416,
+          "turn2_ms": 4118.612084013876,
+          "turn1_timing": {
+            "total_ms": 5386.591608,
+            "llm_ms": 5133.752533999992,
+            "tool_ms": 252.83907400000817,
+            "tool_sum_individual_ms": 349.1922160000058,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 2139.1168789999992,
+                "end_ms": 2290.6866510000013,
+                "duration_ms": 151.569772000002,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 4093.1011350000012,
+                "end_ms": 4189.454277,
+                "duration_ms": 96.35314199999812,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 4092.262971999997,
+                "end_ms": 4193.532274000003,
+                "duration_ms": 101.26930200000572,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          },
+          "turn2_timing": {
+            "total_ms": 3873.0450129999954,
+            "llm_ms": 3576.678292000004,
+            "tool_ms": 296.36672099999123,
+            "tool_sum_individual_ms": 296.3667209999912,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "execute_cancellation",
+                "start_ms": 1400.041606000002,
+                "end_ms": 1464.6164139999983,
+                "duration_ms": 64.57480799999615,
+                "ok": true
+              },
+              {
+                "name": "execute_cancellation",
+                "start_ms": 2535.5916680000023,
+                "end_ms": 2767.3835809999973,
+                "duration_ms": 231.79191299999502,
+                "ok": true
+              }
+            ],
+            "parallel_tools": false,
+            "num_turns": 3
+          }
+        },
+        {
+          "iter": 3,
+          "session_id": "cf1df549597748a5bc48266af1d0d4d368bd4154f4664768ad6adced6ed874fd",
+          "turn1_ms": 4781.840916024521,
+          "turn2_ms": 4794.203958008438,
+          "turn1_timing": {
+            "total_ms": 4448.445539999998,
+            "llm_ms": 4195.531578999997,
+            "tool_ms": 252.91396100000065,
+            "tool_sum_individual_ms": 392.12826300000006,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1150.207726999998,
+                "end_ms": 1245.2111819999984,
+                "duration_ms": 95.00345500000051,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3027.6336039999983,
+                "end_ms": 3167.410735999997,
+                "duration_ms": 139.77713199999897,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3028.196433999998,
+                "end_ms": 3185.5441099999985,
+                "duration_ms": 157.34767600000055,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          },
+          "turn2_timing": {
+            "total_ms": 4576.117852000003,
+            "llm_ms": 4226.875055999997,
+            "tool_ms": 349.2427960000057,
+            "tool_sum_individual_ms": 349.24279600000574,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "execute_cancellation",
+                "start_ms": 1482.7221150000014,
+                "end_ms": 1543.4520260000043,
+                "duration_ms": 60.7299110000028,
+                "ok": true
+              },
+              {
+                "name": "execute_cancellation",
+                "start_ms": 2771.0082259999995,
+                "end_ms": 3059.5211110000023,
+                "duration_ms": 288.51288500000294,
+                "ok": true
+              }
+            ],
+            "parallel_tools": false,
+            "num_turns": 3
+          }
+        },
+        {
+          "iter": 4,
+          "session_id": "908a49e893cd400cbf6b59c33c590beb850c6724fdf644c393d314f099085398",
+          "turn1_ms": 4708.762834023219,
+          "turn2_ms": 4188.89566703001,
+          "turn1_timing": {
+            "total_ms": 4517.755891,
+            "llm_ms": 4249.9829359999985,
+            "tool_ms": 267.7729550000013,
+            "tool_sum_individual_ms": 380.83723800000155,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "get_reservation",
+                "start_ms": 1355.178076999998,
+                "end_ms": 1495.3328839999997,
+                "duration_ms": 140.15480700000182,
+                "ok": true
+              },
+              {
+                "name": "check_eligibility",
+                "start_ms": 3201.729286999999,
+                "end_ms": 3315.2772410000002,
+                "duration_ms": 113.54795400000128,
+                "ok": true
+              },
+              {
+                "name": "get_refund_method",
+                "start_ms": 3202.2129580000005,
+                "end_ms": 3329.3474349999988,
+                "duration_ms": 127.13447699999847,
+                "ok": true
+              }
+            ],
+            "parallel_tools": true,
+            "num_turns": 4
+          },
+          "turn2_timing": {
+            "total_ms": 3993.2771160000016,
+            "llm_ms": 3645.732571000003,
+            "tool_ms": 347.5445449999984,
+            "tool_sum_individual_ms": 347.5445449999981,
+            "ttft_ms": null,
+            "tools": [
+              {
+                "name": "execute_cancellation",
+                "start_ms": 1442.2023089999989,
+                "end_ms": 1539.8328859999992,
+                "duration_ms": 97.63057700000033,
+                "ok": true
+              },
+              {
+                "name": "execute_cancellation",
+                "start_ms": 2570.700276,
+                "end_ms": 2820.614243999998,
+                "duration_ms": 249.91396799999777,
+                "ok": true
+              }
+            ],
+            "parallel_tools": false,
+            "num_turns": 3
+          }
+        }
+      ]
+    },
+    "T14": {
+      "test": "T14",
+      "description": "Pre-warm curve: warmup \u2192 varied wait \u2192 ping",
+      "wait_times_s": [
+        0.5,
+        1.0,
+        2.0,
+        5.0,
+        10.0
+      ],
+      "per_wait": {
+        "0.5": {
+          "wait_s": 0.5,
+          "samples": [
+            220.48325004288927,
+            247.70733300829306,
+            171.2540000444278,
+            216.34691703366116,
+            202.44183304021135,
+            237.22312494646758,
+            203.27100000577047,
+            213.7410420109518,
+            177.40437504835427,
+            250.76687498949468
+          ],
+          "stats": {
+            "count": 10,
+            "min": 171.2540000444278,
+            "max": 250.76687498949468,
+            "mean": 214.06,
+            "p50": 216.35,
+            "p95": 250.77,
+            "p99": 250.77
+          },
+          "raw": [
+            {
+              "iter": 0,
+              "session_id": "4c93581472274566901da0bbba7708fdf032a1cb871a4379936528063d04b90f",
+              "latency_ms": 220.48325004288927
+            },
+            {
+              "iter": 1,
+              "session_id": "b8e59e20e0344c728b1fa3584e43f165ffe48af867f24aa1a991e3f0a8ca6801",
+              "latency_ms": 247.70733300829306
+            },
+            {
+              "iter": 2,
+              "session_id": "f4a4dd835d1541da875f8dbf7e782644948e3f21c9324f3d9d92b8f5e06b67cf",
+              "latency_ms": 171.2540000444278
+            },
+            {
+              "iter": 3,
+              "session_id": "6da0fd0aa6384050b4303d2b3d0b8f9511716ba718c24cc69d88184ac31e35c9",
+              "latency_ms": 216.34691703366116
+            },
+            {
+              "iter": 4,
+              "session_id": "e197d0e8a7d9416bb300e7d5f645c9d5952edbc9a46e4b37baab32a78b2c0dc3",
+              "latency_ms": 202.44183304021135
+            },
+            {
+              "iter": 5,
+              "session_id": "11a443a833404dea9d417bad460ed3ea72067d1854d345d4a6f70bc1cb0063b8",
+              "latency_ms": 237.22312494646758
+            },
+            {
+              "iter": 6,
+              "session_id": "165c5cdcf0694de1b1e6d70a6d7d2ae5598b0501d8fc4e2c93c625d1f7c59110",
+              "latency_ms": 203.27100000577047
+            },
+            {
+              "iter": 7,
+              "session_id": "6a9b5f3762c54375add9edd84fd94500feeb85e363a04abba13c1a022e042d75",
+              "latency_ms": 213.7410420109518
+            },
+            {
+              "iter": 8,
+              "session_id": "2c8827c82aad44d8bf21daf341c26f9a51b634c27fdb4107ad76211291320417",
+              "latency_ms": 177.40437504835427
+            },
+            {
+              "iter": 9,
+              "session_id": "bef6c684e4a04145bf7c244ae342934469b6d5b89d514df59286f89b465afd4d",
+              "latency_ms": 250.76687498949468
+            }
+          ]
+        },
+        "1.0": {
+          "wait_s": 1.0,
+          "samples": [
+            258.07266699848697,
+            216.3315420038998,
+            210.2824579924345,
+            170.02554202917963,
+            232.4052500189282,
+            203.6022919928655,
+            226.48904199013487,
+            204.3471669894643,
+            217.53629198065028,
+            193.53291695006192
+          ],
+          "stats": {
+            "count": 10,
+            "min": 170.02554202917963,
+            "max": 258.07266699848697,
+            "mean": 213.26,
+            "p50": 216.33,
+            "p95": 258.07,
+            "p99": 258.07
+          },
+          "raw": [
+            {
+              "iter": 0,
+              "session_id": "1874befc506744199262b3f11bb6b13ab997b10e451f4d349518a789d3186d64",
+              "latency_ms": 258.07266699848697
+            },
+            {
+              "iter": 1,
+              "session_id": "841b09b027024f7d8b8ec9e31da9d235b4b3d20f9a904fac8a00f60a3be3b189",
+              "latency_ms": 216.3315420038998
+            },
+            {
+              "iter": 2,
+              "session_id": "e161303790bd4f328fe77a097257b3716746f727fdc645bca8e797dba3b8c1d0",
+              "latency_ms": 210.2824579924345
+            },
+            {
+              "iter": 3,
+              "session_id": "28ae2bbf4c964a47893246a8e8e17fdd7fb509a147a74c18abec805c9f952163",
+              "latency_ms": 170.02554202917963
+            },
+            {
+              "iter": 4,
+              "session_id": "318bf4bc2669435a8c336fb657fef69ab71ad50f87b84db7aff6601ee0c7061c",
+              "latency_ms": 232.4052500189282
+            },
+            {
+              "iter": 5,
+              "session_id": "b626db45f00740519883e7f149eba88702aa32eb1221420c9fda86f268cb6c0e",
+              "latency_ms": 203.6022919928655
+            },
+            {
+              "iter": 6,
+              "session_id": "50836116ad0f4f50b2b2f761169be6800954bcdddf434013a78690832ea05c4d",
+              "latency_ms": 226.48904199013487
+            },
+            {
+              "iter": 7,
+              "session_id": "296bed60279e4906bc30ae524e105abb43567854ffc5497a9cca931df520c921",
+              "latency_ms": 204.3471669894643
+            },
+            {
+              "iter": 8,
+              "session_id": "abc2ff0402e34a7a9f190c3c7f97b6888de8ed8c5efa45ebb7371a752e81f3c5",
+              "latency_ms": 217.53629198065028
+            },
+            {
+              "iter": 9,
+              "session_id": "67a44fe79e064d8eb32986faa8e749f0564fc004b54c436f9052c7deed768cdf",
+              "latency_ms": 193.53291695006192
+            }
+          ]
+        },
+        "2.0": {
+          "wait_s": 2.0,
+          "samples": [
+            282.9176249797456,
+            198.4871249878779,
+            221.11587499966845,
+            226.630125020165,
+            212.770875019487,
+            269.82599997427315,
+            218.6140000121668,
+            209.94237496051937,
+            265.7713749795221,
+            208.79383402643725
+          ],
+          "stats": {
+            "count": 10,
+            "min": 198.4871249878779,
+            "max": 282.9176249797456,
+            "mean": 231.49,
+            "p50": 221.12,
+            "p95": 282.92,
+            "p99": 282.92
+          },
+          "raw": [
+            {
+              "iter": 0,
+              "session_id": "5059020469214b86a209f93f367b4e5cd578204a42fa4934bc50416a5ac3a26b",
+              "latency_ms": 282.9176249797456
+            },
+            {
+              "iter": 1,
+              "session_id": "2270298d002d42229ad763bca71eb35a5b50f991d626420ab4fc762a1c8fc927",
+              "latency_ms": 198.4871249878779
+            },
+            {
+              "iter": 2,
+              "session_id": "f6902d0aa98648718e4dfaddaf9761d7ca9cac6fa540447083ca89f2d2349570",
+              "latency_ms": 221.11587499966845
+            },
+            {
+              "iter": 3,
+              "session_id": "60110a61752645c3a228edd8b16fc6e5eb7c484fff1f42d897c6672a32c2faef",
+              "latency_ms": 226.630125020165
+            },
+            {
+              "iter": 4,
+              "session_id": "ccf9f9f504b844088e0d95f922f96fbd324761d649634e41b90c4a4c56cfeb31",
+              "latency_ms": 212.770875019487
+            },
+            {
+              "iter": 5,
+              "session_id": "adfe7322404a42889620d7bfbd525eb3362ebd86f2684dee84782eb7e31a8b8e",
+              "latency_ms": 269.82599997427315
+            },
+            {
+              "iter": 6,
+              "session_id": "9d8a0f9c4c734cd181b50ff8134021d45ff966630b5c46c6b368daa3aea7b4bd",
+              "latency_ms": 218.6140000121668
+            },
+            {
+              "iter": 7,
+              "session_id": "898afe65569f4419ac221a8ef4421133833e1233dcb24c95b4122cc4dc0391ef",
+              "latency_ms": 209.94237496051937
+            },
+            {
+              "iter": 8,
+              "session_id": "3d15e8975c5a47c9ab8d53f7736e47abb1291d308e614816a1a07057a14914b2",
+              "latency_ms": 265.7713749795221
+            },
+            {
+              "iter": 9,
+              "session_id": "ff22f0e554e249ee8becfc3481fc9cce65bb28fd8fda47b3a12801692a4ec602",
+              "latency_ms": 208.79383402643725
+            }
+          ]
+        },
+        "5.0": {
+          "wait_s": 5.0,
+          "samples": [
+            210.47375001944602,
+            218.12974999193102,
+            202.79316703090444,
+            230.59900000225753,
+            180.26970798382536,
+            233.56687498744577,
+            208.0808330210857,
+            198.90020799357444,
+            181.01654201745987,
+            195.292416960001
+          ],
+          "stats": {
+            "count": 10,
+            "min": 180.26970798382536,
+            "max": 233.56687498744577,
+            "mean": 205.91,
+            "p50": 208.08,
+            "p95": 233.57,
+            "p99": 233.57
+          },
+          "raw": [
+            {
+              "iter": 0,
+              "session_id": "88736a028e9c4241a23fb7850f3f83fdcde5cc4376fd4f36b2e4f67c4f708925",
+              "latency_ms": 210.47375001944602
+            },
+            {
+              "iter": 1,
+              "session_id": "1603ab198839428f8ba5719a8bf599bbd6ad2ca764954602a9b8f32920b24b9e",
+              "latency_ms": 218.12974999193102
+            },
+            {
+              "iter": 2,
+              "session_id": "6e1aa8f7d6884065817117d2ffeb6773e1862a53184745d2ac9d9b81eecff678",
+              "latency_ms": 202.79316703090444
+            },
+            {
+              "iter": 3,
+              "session_id": "00d07df84382441c85687ab1ebf816509944dd00f8024ae68d3e0f7d6e8dda08",
+              "latency_ms": 230.59900000225753
+            },
+            {
+              "iter": 4,
+              "session_id": "ddc726139ed44f858ed9df5c27cefa5cd5311276d56d422587dc65685d664009",
+              "latency_ms": 180.26970798382536
+            },
+            {
+              "iter": 5,
+              "session_id": "8e521025f321481cb53020a79eff2d0e2013ba54f017451c9a752b80491845ca",
+              "latency_ms": 233.56687498744577
+            },
+            {
+              "iter": 6,
+              "session_id": "b8b80706cd2944ef82f3bb3cb601a9d3fd7f40720757461588f77d64a3ee4c9d",
+              "latency_ms": 208.0808330210857
+            },
+            {
+              "iter": 7,
+              "session_id": "a706a012fff7407aa558fc59f69224b808f690226d5445de8c35da70b2d2e339",
+              "latency_ms": 198.90020799357444
+            },
+            {
+              "iter": 8,
+              "session_id": "6931f10d7d0c4c6abe175ad562a159925ec28e6912cf4902adc46eb596d58183",
+              "latency_ms": 181.01654201745987
+            },
+            {
+              "iter": 9,
+              "session_id": "d73a151fe8834c6fb914f4b653e8c8c85463779c793f436885d5821d0ab67691",
+              "latency_ms": 195.292416960001
+            }
+          ]
+        },
+        "10.0": {
+          "wait_s": 10.0,
+          "samples": [
+            228.01820799941197,
+            193.48683301359415,
+            183.68366599315777,
+            224.55837501911446,
+            175.36999995354563,
+            208.42475001700222,
+            224.85529200639576,
+            217.7258330048062,
+            221.00724995834753,
+            209.44254100322723
+          ],
+          "stats": {
+            "count": 10,
+            "min": 175.36999995354563,
+            "max": 228.01820799941197,
+            "mean": 208.66,
+            "p50": 217.73,
+            "p95": 228.02,
+            "p99": 228.02
+          },
+          "raw": [
+            {
+              "iter": 0,
+              "session_id": "f9069536a9fd46c491e54a643c460c2ac344e40f3c124221b5e827c8168a5e02",
+              "latency_ms": 228.01820799941197
+            },
+            {
+              "iter": 1,
+              "session_id": "71a3899e43fb49c1a20eb7d535808122d708311827b347e49741ae523ef3c3cc",
+              "latency_ms": 193.48683301359415
+            },
+            {
+              "iter": 2,
+              "session_id": "66e7d539504b424d82e2fd7269a22c7c227fba273afc402980d106223278d400",
+              "latency_ms": 183.68366599315777
+            },
+            {
+              "iter": 3,
+              "session_id": "1784bd4fde2f4fd6ac081805bfc90646800ad1c227b1483b803ec9d057ec7931",
+              "latency_ms": 224.55837501911446
+            },
+            {
+              "iter": 4,
+              "session_id": "689912fc56b943d1b4b7f285d22a6ebf72afb61fa7f941a3909003f8e276855a",
+              "latency_ms": 175.36999995354563
+            },
+            {
+              "iter": 5,
+              "session_id": "4e4a5d4d2507418db2ef0928278b484adeef5482142b44d0ad281a2b0ae79797",
+              "latency_ms": 208.42475001700222
+            },
+            {
+              "iter": 6,
+              "session_id": "969d4b0496834dd1b8ebf6a8f49451aaacd0dca0cd9e4d0983d784d362dd694b",
+              "latency_ms": 224.85529200639576
+            },
+            {
+              "iter": 7,
+              "session_id": "2c2a196e37e54912a47439e49493d0a4672c54af53c94f3782832bf793295c53",
+              "latency_ms": 217.7258330048062
+            },
+            {
+              "iter": 8,
+              "session_id": "c09e6245a5fc414db687b620b816e611e073182321974afebf15bbd52bf112a3",
+              "latency_ms": 221.00724995834753
+            },
+            {
+              "iter": 9,
+              "session_id": "f36b1ab2f7a146dfb29c58cd638b55176a15662a4efc452da1ffe176c92051e3",
+              "latency_ms": 209.44254100322723
+            }
+          ]
+        }
+      }
+    },
+    "T15": {
+      "test": "T15",
+      "description": "Parallel vs sequential tool execution for BK-001 cancel",
+      "parallel_counts": {
+        "true": 20,
+        "false": 0
+      },
+      "total_stats": {
+        "count": 20,
+        "min": 4150.5280410056,
+        "max": 5389.141666004434,
+        "mean": 4605.49,
+        "p50": 4590.89,
+        "p95": 5389.14,
+        "p99": 5389.14
+      },
+      "raw": [
+        {
+          "iter": 0,
+          "session_id": "040707ea14d5426b83aa7861cdb29047b120880851b148708de214ed925bd418",
+          "total_ms": 4560.927584010642,
+          "sum_tool_ms": 564.1286630000018,
+          "wall_tool_ms": 2149.6573259999996,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1106.5513419999995,
+              "end_ms": 1321.9753820000014,
+              "duration_ms": 215.42404000000204,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3011.6620669999998,
+              "end_ms": 3116.4286059999995,
+              "duration_ms": 104.76653899999988,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3012.2705839999994,
+              "end_ms": 3256.2086679999993,
+              "duration_ms": 243.93808399999983,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 1,
+          "session_id": "6746aabf7ec44d008ddc171b003362d66c0ab6bb09624197aa76b3d03b0be3cf",
+          "total_ms": 4150.5280410056,
+          "sum_tool_ms": 321.1930729999999,
+          "wall_tool_ms": 1505.9881819999994,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "check_eligibility",
+              "start_ms": 1170.8701360000014,
+              "end_ms": 1275.3695650000018,
+              "duration_ms": 104.49942900000053,
+              "ok": true
+            },
+            {
+              "name": "get_reservation",
+              "start_ms": 1170.2817790000033,
+              "end_ms": 1279.6798580000016,
+              "duration_ms": 109.3980789999982,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2568.9743960000014,
+              "end_ms": 2676.2699610000027,
+              "duration_ms": 107.29556500000115,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 2,
+          "session_id": "ae3b69f0038140f1a56c68f58a1164402cfbb57b00764030b232f89d96c47794",
+          "total_ms": 4527.936291997321,
+          "sum_tool_ms": 379.7008569999996,
+          "wall_tool_ms": 1882.822150999999,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1047.6190840000008,
+              "end_ms": 1176.8026410000018,
+              "duration_ms": 129.18355700000106,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2802.817728000001,
+              "end_ms": 2925.0979410000004,
+              "duration_ms": 122.2802129999998,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 2802.204148000001,
+              "end_ms": 2930.441235,
+              "duration_ms": 128.2370869999987,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 3,
+          "session_id": "dbf4574500f54186a03a59bb4c14165def690f7579004fdd9a9f6134fc8a5fab",
+          "total_ms": 4445.27837500209,
+          "sum_tool_ms": 451.4707810000011,
+          "wall_tool_ms": 2036.2687120000019,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1247.7681409999982,
+              "end_ms": 1413.4566669999983,
+              "duration_ms": 165.68852600000028,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3131.3947740000003,
+              "end_ms": 3264.998647999999,
+              "duration_ms": 133.6038739999985,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3131.8584719999976,
+              "end_ms": 3284.036853,
+              "duration_ms": 152.17838100000236,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 4,
+          "session_id": "3074efb8a0724e40be671b9676115e15e79e1a7355a2485482e4a34e5613c985",
+          "total_ms": 4989.820000017062,
+          "sum_tool_ms": 434.7842509999964,
+          "wall_tool_ms": 2320.996358999999,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1147.0663870000024,
+              "end_ms": 1299.9867930000023,
+              "duration_ms": 152.9204059999998,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3273.7083880000027,
+              "end_ms": 3361.737291000001,
+              "duration_ms": 88.02890299999788,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3274.2278040000024,
+              "end_ms": 3468.062746000001,
+              "duration_ms": 193.83494199999873,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 5,
+          "session_id": "27c6603bc70c4597be127cccf1dcedbcc671654be1a54e7c9379a52de4f1a70c",
+          "total_ms": 4683.109165984206,
+          "sum_tool_ms": 335.19654499999876,
+          "wall_tool_ms": 1994.128525000001,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1177.1599329999985,
+              "end_ms": 1308.440762,
+              "duration_ms": 131.28082900000138,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3068.962623000001,
+              "end_ms": 3170.051021999999,
+              "duration_ms": 101.08839899999822,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3068.461141,
+              "end_ms": 3171.2884579999995,
+              "duration_ms": 102.82731699999914,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 6,
+          "session_id": "ca8556ffe9ab445bb474a6e3f08c22f61943d4c58ca44a2b8d2e9a43b2565081",
+          "total_ms": 4327.608874998987,
+          "sum_tool_ms": 339.9367530000035,
+          "wall_tool_ms": 1691.7727319999972,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "check_eligibility",
+              "start_ms": 1282.741158999997,
+              "end_ms": 1381.5093549999985,
+              "duration_ms": 98.76819600000175,
+              "ok": true
+            },
+            {
+              "name": "get_reservation",
+              "start_ms": 1282.091262999998,
+              "end_ms": 1423.7341179999987,
+              "duration_ms": 141.64285500000062,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2874.338292999994,
+              "end_ms": 2973.863994999995,
+              "duration_ms": 99.5257020000011,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 7,
+          "session_id": "14099e0d81d44908828f46a52a5ba3cc29f0f894b14746f2955c59fe636db1e3",
+          "total_ms": 4344.22737499699,
+          "sum_tool_ms": 402.0960630000019,
+          "wall_tool_ms": 1576.3100200000008,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1140.7478920000003,
+              "end_ms": 1240.405679000002,
+              "duration_ms": 99.65778700000172,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 1141.6383170000017,
+              "end_ms": 1243.5478870000018,
+              "duration_ms": 101.90957000000012,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2516.529206000001,
+              "end_ms": 2717.057912000001,
+              "duration_ms": 200.52870600000006,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 8,
+          "session_id": "ea41ec0dc8a74fe1a4cce69bca9dddfccb9e4e13b92c40bd8c9712417f2efaf0",
+          "total_ms": 5389.141666004434,
+          "sum_tool_ms": 474.6296160000014,
+          "wall_tool_ms": 2443.858364,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1282.359832000001,
+              "end_ms": 1427.949311999999,
+              "duration_ms": 145.58947999999816,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3537.0070019999994,
+              "end_ms": 3676.3618040000024,
+              "duration_ms": 139.35480200000327,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3536.5328620000014,
+              "end_ms": 3726.218196000001,
+              "duration_ms": 189.68533399999998,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 9,
+          "session_id": "4b60cbc79785415f83935745523193863b85f49e33c84d06a83cbc23242e10cd",
+          "total_ms": 4700.81166701857,
+          "sum_tool_ms": 351.2434549999952,
+          "wall_tool_ms": 1535.0317109999987,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1361.9362680000008,
+              "end_ms": 1471.9898560000004,
+              "duration_ms": 110.05358799999954,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 1362.513113000002,
+              "end_ms": 1495.4998699999996,
+              "duration_ms": 132.98675699999762,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2788.7648690000015,
+              "end_ms": 2896.9679789999996,
+              "duration_ms": 108.20310999999805,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 10,
+          "session_id": "70a45811fe174a5aa7c83d151d7e65b07996918b24e041bbb3f23d31303fca71",
+          "total_ms": 4695.371541019995,
+          "sum_tool_ms": 528.4928359999981,
+          "wall_tool_ms": 1994.6658649999983,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1103.6630549999984,
+              "end_ms": 1278.3087849999965,
+              "duration_ms": 174.64572999999817,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 2900.8464809999987,
+              "end_ms": 3057.6849549999993,
+              "duration_ms": 156.83847400000062,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2901.320287999997,
+              "end_ms": 3098.3289199999967,
+              "duration_ms": 197.0086319999993,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 11,
+          "session_id": "9b21560ab8854103bc826b5825fb625f2c28a8ad772d44eab8b6878058c80fdd",
+          "total_ms": 4224.3965830421075,
+          "sum_tool_ms": 321.2803450000017,
+          "wall_tool_ms": 1589.782373000002,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "check_eligibility",
+              "start_ms": 1413.711054,
+              "end_ms": 1506.8591900000001,
+              "duration_ms": 93.14813599999994,
+              "ok": true
+            },
+            {
+              "name": "get_reservation",
+              "start_ms": 1413.1178969999994,
+              "end_ms": 1508.3979710000008,
+              "duration_ms": 95.28007400000149,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2870.048135000001,
+              "end_ms": 3002.9002700000015,
+              "duration_ms": 132.85213500000026,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 12,
+          "session_id": "61585f65c8754eab809c0e10371ba31a2927615ea48b4273a28fe921d2bad4fa",
+          "total_ms": 4837.4195419601165,
+          "sum_tool_ms": 320.4863059999994,
+          "wall_tool_ms": 2024.2947939999992,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1373.7616999999993,
+              "end_ms": 1472.8463840000004,
+              "duration_ms": 99.08468400000103,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3285.757343,
+              "end_ms": 3395.3421020000005,
+              "duration_ms": 109.58475900000053,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3286.239631000001,
+              "end_ms": 3398.0564939999986,
+              "duration_ms": 111.81686299999782,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 13,
+          "session_id": "be16f9435a224214b90dbf9c319789aaa1598ad972834a30ab6e23f0947679e0",
+          "total_ms": 4867.384249984752,
+          "sum_tool_ms": 378.45112299999784,
+          "wall_tool_ms": 2067.0512049999984,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1039.5779939999984,
+              "end_ms": 1142.5307909999988,
+              "duration_ms": 102.95279700000037,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 2954.3762119999997,
+              "end_ms": 3078.224085999999,
+              "duration_ms": 123.84787399999908,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2954.9787469999983,
+              "end_ms": 3106.629198999997,
+              "duration_ms": 151.65045199999838,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 14,
+          "session_id": "920c6151ffe04430aafa006a8c35e27bc3b47bbe27814f4bb30103adb635d8b0",
+          "total_ms": 4590.88920900831,
+          "sum_tool_ms": 378.4368730000018,
+          "wall_tool_ms": 1786.3714760000028,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1142.678157999999,
+              "end_ms": 1247.3970439999996,
+              "duration_ms": 104.71888600000057,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2791.425356000001,
+              "end_ms": 2927.003795000001,
+              "duration_ms": 135.57843899999966,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 2790.9100860000003,
+              "end_ms": 2929.049634000002,
+              "duration_ms": 138.1395480000016,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 15,
+          "session_id": "9ad8e02259b44f6597b5a6cd6957acde06852905444a46fd929ed0aaf337888b",
+          "total_ms": 4611.5741659887135,
+          "sum_tool_ms": 441.8319499999974,
+          "wall_tool_ms": 2072.0146379999987,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1242.5270260000011,
+              "end_ms": 1413.7690559999996,
+              "duration_ms": 171.24202999999838,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3168.6376840000003,
+              "end_ms": 3293.8133259999986,
+              "duration_ms": 125.17564199999853,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3169.1273859999997,
+              "end_ms": 3314.541664,
+              "duration_ms": 145.4142780000005,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 16,
+          "session_id": "3a87a8da75d44e60a4f531576d4e7de20210109f952442dc8f959154644f2a83",
+          "total_ms": 4386.867541004904,
+          "sum_tool_ms": 344.89527699999553,
+          "wall_tool_ms": 1747.6482669999987,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1237.8271689999992,
+              "end_ms": 1337.0928889999973,
+              "duration_ms": 99.26571999999823,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 1238.2876689999982,
+              "end_ms": 1337.3928909999968,
+              "duration_ms": 99.1052219999986,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2838.951100999999,
+              "end_ms": 2985.475435999998,
+              "duration_ms": 146.52433499999873,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 17,
+          "session_id": "73e41460bfcc424da414de63a63e025e1f322b9a8957485f90144ede026b1220",
+          "total_ms": 4607.209582987707,
+          "sum_tool_ms": 392.741725999997,
+          "wall_tool_ms": 2043.095233999999,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1154.4996740000001,
+              "end_ms": 1294.2299959999987,
+              "duration_ms": 139.73032199999835,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3042.435605999998,
+              "end_ms": 3139.3385879999973,
+              "duration_ms": 96.90298199999958,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3041.4864860000002,
+              "end_ms": 3197.594907999999,
+              "duration_ms": 156.10842199999908,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 18,
+          "session_id": "888e4adb12314ccf85f2f5790a8fb9f1fd486ecb9fb641cd82a39ecc7e30c53b",
+          "total_ms": 4436.289125005715,
+          "sum_tool_ms": 351.5983259999942,
+          "wall_tool_ms": 1628.1807069999986,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "check_eligibility",
+              "start_ms": 1248.7127450000023,
+              "end_ms": 1339.0823699999999,
+              "duration_ms": 90.36962499999746,
+              "ok": true
+            },
+            {
+              "name": "get_reservation",
+              "start_ms": 1248.1424810000021,
+              "end_ms": 1363.8241539999995,
+              "duration_ms": 115.68167299999743,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 2730.7761600000013,
+              "end_ms": 2876.3231880000008,
+              "duration_ms": 145.5470279999993,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "iter": 19,
+          "session_id": "3a64ff1b2bbc4d319c3e0c78154638cfe31e3aac7aa74f21a0e9d857e87c1957",
+          "total_ms": 4732.983624970075,
+          "sum_tool_ms": 387.743418000003,
+          "wall_tool_ms": 2230.0314000000017,
+          "parallel_tools": true,
+          "num_tools": 3,
+          "tools": [
+            {
+              "name": "get_reservation",
+              "start_ms": 1140.8580690000001,
+              "end_ms": 1286.7675160000013,
+              "duration_ms": 145.90944700000108,
+              "ok": true
+            },
+            {
+              "name": "get_refund_method",
+              "start_ms": 3236.2852219999995,
+              "end_ms": 3343.055866,
+              "duration_ms": 106.77064400000091,
+              "ok": true
+            },
+            {
+              "name": "check_eligibility",
+              "start_ms": 3235.8261420000003,
+              "end_ms": 3370.8894690000016,
+              "duration_ms": 135.063327000001,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    "T16": {
+      "test": "T16",
+      "description": "Connect hop vs direct invocation",
+      "direct_stats": {
+        "count": 20,
+        "min": 714.5622500102036,
+        "max": 7896.343583997805,
+        "mean": 1930.22,
+        "p50": 862.07,
+        "p95": 7896.34,
+        "p99": 7896.34
+      },
+      "connect_stats": {
+        "count": 20,
+        "min": 778.792875004001,
+        "max": 7837.9589159740135,
+        "mean": 2271.78,
+        "p50": 908.85,
+        "p95": 7837.96,
+        "p99": 7837.96
+      },
+      "overhead_stats": {
+        "count": 20,
+        "min": -7035.902666975744,
+        "max": 7097.59599895915,
+        "mean": 341.57,
+        "p50": 57.48,
+        "p95": 7097.6,
+        "p99": 7097.6
+      },
+      "raw": [
+        {
+          "iter": 0,
+          "direct_ms": 6756.975291995332,
+          "connect_ms": 1561.9081250042655,
+          "overhead_ms": -5195.067166991066
+        },
+        {
+          "iter": 1,
+          "direct_ms": 803.8605829933658,
+          "connect_ms": 2709.264000004623,
+          "overhead_ms": 1905.4034170112573
+        },
+        {
+          "iter": 2,
+          "direct_ms": 1440.250457962975,
+          "connect_ms": 6850.35408398835,
+          "overhead_ms": 5410.103626025375
+        },
+        {
+          "iter": 3,
+          "direct_ms": 827.2144999937154,
+          "connect_ms": 886.3619579933584,
+          "overhead_ms": 59.14745799964294
+        },
+        {
+          "iter": 4,
+          "direct_ms": 897.3780419910327,
+          "connect_ms": 1007.4712909990922,
+          "overhead_ms": 110.0932490080595
+        },
+        {
+          "iter": 5,
+          "direct_ms": 2667.2792499884963,
+          "connect_ms": 778.792875004001,
+          "overhead_ms": -1888.4863749844953
+        },
+        {
+          "iter": 6,
+          "direct_ms": 2655.324707971886,
+          "connect_ms": 933.9662499842234,
+          "overhead_ms": -1721.3584579876624
+        },
+        {
+          "iter": 7,
+          "direct_ms": 880.9603330446407,
+          "connect_ms": 801.0831670253538,
+          "overhead_ms": -79.87716601928696
+        },
+        {
+          "iter": 8,
+          "direct_ms": 785.1227499777451,
+          "connect_ms": 4716.603167005815,
+          "overhead_ms": 3931.4804170280695
+        },
+        {
+          "iter": 9,
+          "direct_ms": 7896.343583997805,
+          "connect_ms": 860.4409170220606,
+          "overhead_ms": -7035.902666975744
+        },
+        {
+          "iter": 10,
+          "direct_ms": 888.3590839686804,
+          "connect_ms": 2715.078250039369,
+          "overhead_ms": 1826.7191660706885
+        },
+        {
+          "iter": 11,
+          "direct_ms": 740.3629170148633,
+          "connect_ms": 7837.9589159740135,
+          "overhead_ms": 7097.59599895915
+        },
+        {
+          "iter": 12,
+          "direct_ms": 862.0731250266545,
+          "connect_ms": 919.5556250051595,
+          "overhead_ms": 57.482499978505075
+        },
+        {
+          "iter": 13,
+          "direct_ms": 714.5622500102036,
+          "connect_ms": 783.3006660221145,
+          "overhead_ms": 68.73841601191089
+        },
+        {
+          "iter": 14,
+          "direct_ms": 5691.163207986392,
+          "connect_ms": 822.1334590343758,
+          "overhead_ms": -4869.029748952016
+        },
+        {
+          "iter": 15,
+          "direct_ms": 805.5209169979207,
+          "connect_ms": 806.4089170075022,
+          "overhead_ms": 0.8880000095814466
+        },
+        {
+          "iter": 16,
+          "direct_ms": 803.470249986276,
+          "connect_ms": 836.5733749815263,
+          "overhead_ms": 33.103124995250255
+        },
+        {
+          "iter": 17,
+          "direct_ms": 766.5618340251967,
+          "connect_ms": 900.618416024372,
+          "overhead_ms": 134.05658199917525
+        },
+        {
+          "iter": 18,
+          "direct_ms": 855.9564999886788,
+          "connect_ms": 7798.955165955704,
+          "overhead_ms": 6942.998665967025
+        },
+        {
+          "iter": 19,
+          "direct_ms": 865.5634999740869,
+          "connect_ms": 908.8484169915318,
+          "overhead_ms": 43.28491701744497
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "_comment": "Live config for the voice-bench run. ARNs are not secrets; gateway uses AWS_IAM (no client secret).",
+  "aws": {
+    "account_id": "111122223333",
+    "region": "us-east-1",
+    "profile": "voice-bench"
+  },
+  "bedrock_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "agent_runtimes": {
+    "voice-bench-agent-container": {
+      "arn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/voice_bench_agent-EXAMPLE",
+      "description": "Container-based runtime for T4 cold-start test"
+    },
+    "voice-bench-agent-code": {
+      "arn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/voice_bench_agent_code-EXAMPLE",
+      "description": "Code-based runtime for T5 cold-start test"
+    }
+  },
+  "endpoints": {
+    "DEFAULT": {
+      "agent_runtime_arn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/voice_bench_agent-EXAMPLE",
+      "qualifier": "DEFAULT"
+    },
+    "voice-bench-ep-2": {
+      "agent_runtime_arn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/voice_bench_agent-EXAMPLE",
+      "qualifier": "voice_bench_ep_2"
+    },
+    "voice-bench-ep-3": {
+      "agent_runtime_arn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/voice_bench_agent-EXAMPLE",
+      "qualifier": "voice_bench_ep_3"
+    }
+  },
+  "primary_runtime": {
+    "arn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:runtime/voice_bench_lg_v3-EXAMPLE",
+    "qualifier": "DEFAULT"
+  },
+  "lambda": {
+    "get_reservation": "voice-bench-get-reservation",
+    "check_eligibility": "voice-bench-check-eligibility",
+    "get_refund_method": "voice-bench-get-refund-method",
+    "execute_cancellation": "voice-bench-execute-cancellation"
+  },
+  "gateway": {
+    "auth": "AWS_IAM",
+    "mcp_url": "https://voice-bench-tools-EXAMPLE.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp",
+    "gateway_id": "voice-bench-tools-EXAMPLE"
+  },
+  "connect_sim_lambda": "voice-bench-connect-sim",
+  "cost_rates": {
+    "_comment": "Lambda + LLM rates are current us-east-1 published values; AgentCore rates left 0 (fill from pricing page).",
+    "lambda_pc_provisioned_gb_s": 3.5137e-06,
+    "lambda_pc_request": 2e-07,
+    "lambda_duration_per_gb_s": 1.33334e-05,
+    "lambda_request": 2e-07,
+    "lambda_pc_instances": 20,
+    "lambda_memory_gb": 0.5,
+    "llm_input_per_1k_tokens": 0.0008,
+    "llm_output_per_1k_tokens": 0.004,
+    "agentcore_idle_per_hour": 0.0,
+    "agentcore_active_per_invocation": 0.0,
+    "_note": "AgentCore Runtime consumption pricing (vCPU-s + GB-s) not filled; see https://aws.amazon.com/bedrock/pricing/"
+  }
+}

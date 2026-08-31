@@ -1,0 +1,355 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >-
+  voice-agent-latency-bench: 4 tool Lambdas (arm64/512MB) with Provisioned
+  Concurrency = 5 on alias "live". Role ARN and table names are HARDCODED
+  (not Fn::ImportValue) to decouple from the shared-infra stack.
+  If the team later wants cross-stack coupling, the assumed export names are:
+    voice-bench-lambda-exec-role-arn      (IAM role ARN)
+    voice-bench-reservations-table-name   (DynamoDB table name)
+    voice-bench-refund-rules-table-name   (DynamoDB table name)
+
+# ── Shared values ────────────────────────────────────────────────────────────
+# Hardcoded to avoid Fn::ImportValue dependency on voice-bench-shared-infra.
+# Change these if the shared-infra stack uses different names.
+# Role ARN:       arn:aws:iam::111122223333:role/voice-bench-lambda-exec-role
+# Reservations:   voice-bench-reservations
+# Refund rules:   voice-bench-refund-rules
+
+Resources:
+
+  # ── voice-bench-get-reservation ─────────────────────────────────────────────
+  GetReservationFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: voice-bench-get-reservation
+      Description: Fetch reservation record from DynamoDB by booking_id
+      Runtime: python3.12
+      Architectures: [arm64]
+      MemorySize: 512
+      Timeout: 30
+      Role: arn:aws:iam::111122223333:role/voice-bench-lambda-exec-role
+      Handler: index.handler
+      Environment:
+        Variables:
+          RESERVATIONS_TABLE: voice-bench-reservations
+          REFUND_RULES_TABLE: voice-bench-refund-rules
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+      Code:
+        ZipFile: |
+          import json, os, time
+          from decimal import Decimal
+          import boto3
+
+          _TABLE_NAME = os.environ.get("RESERVATIONS_TABLE", "voice-bench-reservations")
+          _ddb = boto3.resource("dynamodb")
+          _table = _ddb.Table(_TABLE_NAME)
+
+          def _unwrap(event):
+              body = event.get("body")
+              if isinstance(body, str):
+                  return json.loads(body)
+              if isinstance(body, dict):
+                  return body
+              return event
+
+          def _jsonify(obj):
+              if isinstance(obj, Decimal):
+                  f = float(obj)
+                  return int(f) if f == int(f) else f
+              if isinstance(obj, dict):
+                  return {k: _jsonify(v) for k, v in obj.items()}
+              if isinstance(obj, (list, tuple)):
+                  return [_jsonify(i) for i in obj]
+              return obj
+
+          def handler(event, context):
+              event = _unwrap(event)
+              t0 = time.perf_counter()
+              booking_id = event["booking_id"]
+              resp = _table.get_item(Key={"booking_id": booking_id})
+              ms = round((time.perf_counter() - t0) * 1000, 3)
+              item = resp.get("Item")
+              if not item:
+                  return {"found": False, "booking_id": booking_id, "_execution_ms": ms}
+              record = _jsonify(dict(item))
+              record["_execution_ms"] = ms
+              return record
+
+  GetReservationVersion:
+    Type: AWS::Lambda::Version
+    Properties:
+      FunctionName: !Ref GetReservationFunction
+      Description: Published by voice-bench-lambda-tools CFN stack
+
+  GetReservationAlias:
+    Type: AWS::Lambda::Alias
+    Properties:
+      FunctionName: !Ref GetReservationFunction
+      FunctionVersion: !GetAtt GetReservationVersion.Version
+      Name: live
+      ProvisionedConcurrencyConfig:
+        ProvisionedConcurrentExecutions: 5
+
+  # ── voice-bench-check-eligibility ───────────────────────────────────────────
+  CheckEligibilityFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: voice-bench-check-eligibility
+      Description: Deterministic eligibility rules — no DynamoDB, pure logic
+      Runtime: python3.12
+      Architectures: [arm64]
+      MemorySize: 512
+      Timeout: 30
+      Role: arn:aws:iam::111122223333:role/voice-bench-lambda-exec-role
+      Handler: index.handler
+      Environment:
+        Variables:
+          RESERVATIONS_TABLE: voice-bench-reservations
+          REFUND_RULES_TABLE: voice-bench-refund-rules
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+      Code:
+        ZipFile: |
+          import json, time
+
+          def _unwrap(event):
+              body = event.get("body")
+              if isinstance(body, str):
+                  return json.loads(body)
+              if isinstance(body, dict):
+                  return body
+              return event
+
+          def handler(event, context):
+              event = _unwrap(event)
+              t0 = time.perf_counter()
+              already_traveled = bool(event.get("already_traveled", False))
+              is_group = bool(event.get("is_group_booking", False))
+              pax_count = int(event.get("pax_count", 1))
+              has_checked_bags = bool(event.get("has_checked_bags", False))
+              linked_minor = bool(event.get("linked_minor", False))
+              if already_traveled:
+                  eligible = False
+                  reason = "Ticket already traveled; not eligible for cancellation."
+              else:
+                  eligible = True
+                  reason = "Eligible for cancellation."
+              requires_split = is_group and pax_count > 1
+              warnings = []
+              if linked_minor:
+                  warnings.append("Linked minor: guardian confirmation required.")
+              if has_checked_bags:
+                  warnings.append("Checked baggage present: refund of baggage fees may differ.")
+              if requires_split:
+                  warnings.append("Group booking: booking must be split before cancellation.")
+              ms = round((time.perf_counter() - t0) * 1000, 3)
+              return {"eligible": eligible, "reason": reason,
+                      "requires_split": requires_split, "warnings": warnings,
+                      "_execution_ms": ms}
+
+  CheckEligibilityVersion:
+    Type: AWS::Lambda::Version
+    Properties:
+      FunctionName: !Ref CheckEligibilityFunction
+      Description: Published by voice-bench-lambda-tools CFN stack
+
+  CheckEligibilityAlias:
+    Type: AWS::Lambda::Alias
+    Properties:
+      FunctionName: !Ref CheckEligibilityFunction
+      FunctionVersion: !GetAtt CheckEligibilityVersion.Version
+      Name: live
+      ProvisionedConcurrencyConfig:
+        ProvisionedConcurrentExecutions: 5
+
+  # ── voice-bench-get-refund-method ────────────────────────────────────────────
+  GetRefundMethodFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: voice-bench-get-refund-method
+      Description: Lookup refund rules from DynamoDB by fare_type + payment_method
+      Runtime: python3.12
+      Architectures: [arm64]
+      MemorySize: 512
+      Timeout: 30
+      Role: arn:aws:iam::111122223333:role/voice-bench-lambda-exec-role
+      Handler: index.handler
+      Environment:
+        Variables:
+          RESERVATIONS_TABLE: voice-bench-reservations
+          REFUND_RULES_TABLE: voice-bench-refund-rules
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+      Code:
+        ZipFile: |
+          import json, os, time
+          from decimal import Decimal
+          import boto3
+
+          _TABLE_NAME = os.environ.get("REFUND_RULES_TABLE", "voice-bench-refund-rules")
+          _ddb = boto3.resource("dynamodb")
+          _table = _ddb.Table(_TABLE_NAME)
+
+          def _unwrap(event):
+              body = event.get("body")
+              if isinstance(body, str):
+                  return json.loads(body)
+              if isinstance(body, dict):
+                  return body
+              return event
+
+          def _jsonify(obj):
+              if isinstance(obj, Decimal):
+                  f = float(obj)
+                  return int(f) if f == int(f) else f
+              if isinstance(obj, dict):
+                  return {k: _jsonify(v) for k, v in obj.items()}
+              if isinstance(obj, (list, tuple)):
+                  return [_jsonify(i) for i in obj]
+              return obj
+
+          def handler(event, context):
+              event = _unwrap(event)
+              t0 = time.perf_counter()
+              fare_type = event["fare_type"]
+              payment_method = event["payment_method"]
+              resp = _table.get_item(
+                  Key={"fare_type": fare_type, "payment_method": payment_method}
+              )
+              ms = round((time.perf_counter() - t0) * 1000, 3)
+              item = resp.get("Item")
+              if not item:
+                  return {"found": False, "fare_type": fare_type,
+                          "payment_method": payment_method, "_execution_ms": ms}
+              record = _jsonify(dict(item))
+              record["_execution_ms"] = ms
+              return record
+
+  GetRefundMethodVersion:
+    Type: AWS::Lambda::Version
+    Properties:
+      FunctionName: !Ref GetRefundMethodFunction
+      Description: Published by voice-bench-lambda-tools CFN stack
+
+  GetRefundMethodAlias:
+    Type: AWS::Lambda::Alias
+    Properties:
+      FunctionName: !Ref GetRefundMethodFunction
+      FunctionVersion: !GetAtt GetRefundMethodVersion.Version
+      Name: live
+      ProvisionedConcurrencyConfig:
+        ProvisionedConcurrentExecutions: 5
+
+  # ── voice-bench-execute-cancellation ────────────────────────────────────────
+  ExecuteCancellationFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: voice-bench-execute-cancellation
+      Description: Execute cancellation steps; 150ms sleep per step for latency simulation
+      Runtime: python3.12
+      Architectures: [arm64]
+      MemorySize: 512
+      Timeout: 30
+      Role: arn:aws:iam::111122223333:role/voice-bench-lambda-exec-role
+      Handler: index.handler
+      Environment:
+        Variables:
+          RESERVATIONS_TABLE: voice-bench-reservations
+          REFUND_RULES_TABLE: voice-bench-refund-rules
+      Tags:
+        - Key: project
+          Value: voice-agent-latency-bench
+      Code:
+        ZipFile: |
+          import json, time
+
+          def _unwrap(event):
+              body = event.get("body")
+              if isinstance(body, str):
+                  return json.loads(body)
+              if isinstance(body, dict):
+                  return body
+              return event
+
+          def handler(event, context):
+              event = _unwrap(event)
+              t0 = time.perf_counter()
+              booking_id = event.get("booking_id", "")
+              steps = event.get("steps", [])
+              completed = []
+              for step in steps:
+                  time.sleep(0.15)
+                  completed.append(step)
+              total_ms = int((time.perf_counter() - t0) * 1000)
+              return {"success": True, "booking_id": booking_id,
+                      "steps_completed": completed, "total_execution_ms": total_ms}
+
+  ExecuteCancellationVersion:
+    Type: AWS::Lambda::Version
+    Properties:
+      FunctionName: !Ref ExecuteCancellationFunction
+      Description: Published by voice-bench-lambda-tools CFN stack
+
+  ExecuteCancellationAlias:
+    Type: AWS::Lambda::Alias
+    Properties:
+      FunctionName: !Ref ExecuteCancellationFunction
+      FunctionVersion: !GetAtt ExecuteCancellationVersion.Version
+      Name: live
+      ProvisionedConcurrencyConfig:
+        ProvisionedConcurrentExecutions: 5
+
+Outputs:
+  # ── Function ARNs ($LATEST — use for cold-start baseline T2) ──────────────
+  GetReservationFunctionArn:
+    Description: ARN of voice-bench-get-reservation ($LATEST)
+    Value: !GetAtt GetReservationFunction.Arn
+    Export:
+      Name: voice-bench-get-reservation-arn
+
+  CheckEligibilityFunctionArn:
+    Description: ARN of voice-bench-check-eligibility ($LATEST)
+    Value: !GetAtt CheckEligibilityFunction.Arn
+    Export:
+      Name: voice-bench-check-eligibility-arn
+
+  GetRefundMethodFunctionArn:
+    Description: ARN of voice-bench-get-refund-method ($LATEST)
+    Value: !GetAtt GetRefundMethodFunction.Arn
+    Export:
+      Name: voice-bench-get-refund-method-arn
+
+  ExecuteCancellationFunctionArn:
+    Description: ARN of voice-bench-execute-cancellation ($LATEST)
+    Value: !GetAtt ExecuteCancellationFunction.Arn
+    Export:
+      Name: voice-bench-execute-cancellation-arn
+
+  # ── Alias ARNs (PC=5 — use for warm/provisioned benchmark T1) ────────────
+  GetReservationAliasArn:
+    Description: ARN of voice-bench-get-reservation:live alias (PC=5)
+    Value: !Ref GetReservationAlias
+    Export:
+      Name: voice-bench-get-reservation-live-arn
+
+  CheckEligibilityAliasArn:
+    Description: ARN of voice-bench-check-eligibility:live alias (PC=5)
+    Value: !Ref CheckEligibilityAlias
+    Export:
+      Name: voice-bench-check-eligibility-live-arn
+
+  GetRefundMethodAliasArn:
+    Description: ARN of voice-bench-get-refund-method:live alias (PC=5)
+    Value: !Ref GetRefundMethodAlias
+    Export:
+      Name: voice-bench-get-refund-method-live-arn
+
+  ExecuteCancellationAliasArn:
+    Description: ARN of voice-bench-execute-cancellation:live alias (PC=5)
+    Value: !Ref ExecuteCancellationAlias
+    Export:
+      Name: voice-bench-execute-cancellation-live-arn
